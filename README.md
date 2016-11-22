@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/OCA/account-financial-reporting.svg?branch=7.0)](https://travis-ci.org/OCA/account-financial-reporting)
-[![Coverage Status](https://coveralls.io/repos/OCA/account-financial-reporting/badge.png?branch=7.0)](https://coveralls.io/r/OCA/account-financial-reporting?branch=7.0)
+[![Build Status](https://travis-ci.org/zeroincombenze/account-financial-reporting.svg?branch=7.0)](https://travis-ci.org/zeroincombenze/account-financial-reporting)
+[![Coverage Status](https://coveralls.io/repos/zeroincombenze/account-financial-reporting/badge.png?branch=7.0)](https://coveralls.io/r/zeroincombenze/account-financial-reporting?branch=7.0)
 
 OpenERP account financial reports
 =================================
