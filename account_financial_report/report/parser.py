@@ -1180,6 +1180,7 @@ class account_balance(report_sxw.rml_parse):
             result_acc.append(res2)
         return result_acc
 
+
 report_sxw.report_sxw(
     'report.afr.1cols',
     'wizard.report',

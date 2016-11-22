@@ -315,6 +315,7 @@ class trial_balance_xls(report_xls):
             row_pos = self.xls_write_row(
                 ws, row_pos, row_data, row_style=cell_style)
 
+
 trial_balance_xls('report.account.account_report_trial_balance_xls',
                   'account.account',
                   parser=TrialBalanceWebkit)

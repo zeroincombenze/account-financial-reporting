@@ -41,6 +41,7 @@ class GeneralLedgerWebkitSupplier(GeneralLedgerWebkit):
             , i.supplier_invoice_number AS supplier_invoice_number
         """
 
+
 _column_sizes = [
     ('date', 12),
     ('period', 12),
@@ -369,6 +370,7 @@ class general_ledger_xls(report_xls):
                 row_pos = self.xls_write_row(
                     ws, row_pos, row_data, c_hdr_cell_style)
                 row_pos += 1
+
 
 general_ledger_xls('report.account.account_report_general_ledger_xls',
                    'account.account',

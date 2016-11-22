@@ -452,6 +452,7 @@ class partner_ledger_xls(report_xls):
                     ws, row_pos, row_data, account_cell_style)
                 row_pos += 2
 
+
 partner_ledger_xls('report.account.account_report_partner_ledger_xls',
                    'account.account',
                    parser=PartnersLedgerWebkit)

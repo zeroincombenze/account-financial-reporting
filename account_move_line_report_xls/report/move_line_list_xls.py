@@ -368,6 +368,7 @@ class move_line_xls(report_xls):
         row_pos = self.xls_write_row(
             ws, row_pos, row_data, row_style=self.rt_cell_style_right)
 
+
 move_line_xls('report.move.line.list.xls',
               'account.move.line',
               parser=move_line_xls_parser)

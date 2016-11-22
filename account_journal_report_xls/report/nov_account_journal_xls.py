@@ -404,5 +404,6 @@ class account_journal_xls(report_xls):
             row_pos = self._journal_lines(o, ws, _p, row_pos, xlwt, _xs)
             row_pos = self._journal_vat_summary(o, ws, _p, row_pos, xlwt, _xs)
 
+
 account_journal_xls('report.nov.account.journal.xls', 'account.journal.period',
                     parser=account_journal_xls_parser)

@@ -423,6 +423,7 @@ class partners_balance_xls(report_xls):
             row_pos = self.print_account_totals(
                 _xs, xlwt, ws, row_account_start, row_pos, current_account, _p)
 
+
 partners_balance_xls('report.account.account_report_partner_balance_xls',
                      'account.account',
                      parser=PartnerBalanceWebkit)

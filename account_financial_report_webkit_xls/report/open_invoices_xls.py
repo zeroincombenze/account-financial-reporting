@@ -819,5 +819,6 @@ class open_invoices_xls(report_xls):
                     row_pos, acc, _xs, xlwt, _p, data)
             row_pos += 1
 
+
 open_invoices_xls('report.account.account_report_open_invoices_xls',
                   'account.account', parser=PartnersOpenInvoicesWebkit)

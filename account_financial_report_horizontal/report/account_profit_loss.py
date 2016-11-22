@@ -235,11 +235,13 @@ class report_pl_account_horizontal(report_sxw.rml_parse, common_report_header):
     def get_lines_another(self, group):
         return self.result.get(group, [])
 
+
 report_sxw.report_sxw(
     'report.account.profit_horizontal', 'account.account',
     'addons/account_financial_report_horizontal/report/'
     'account_profit_horizontal.rml',
     parser=report_pl_account_horizontal, header='internal landscape')
+
 
 report_sxw.report_sxw(
     'report.account.profit_loss', 'account.account',

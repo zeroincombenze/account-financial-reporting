@@ -356,6 +356,7 @@ class nov_journal_print(report_sxw.rml_parse):
                 value, digits,
                 date, date_time, grouping, monetary, dp, currency_obj)
 
+
 report_sxw.report_sxw(
     'report.nov.account.journal.print', 'account.journal',
     'addons/account_journal_report_xls/report/nov_account_journal.rml',
