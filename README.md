@@ -7,8 +7,8 @@
 [![Help](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-7.svg)](http://wiki.zeroincombenze.org/en/Odoo/7.0/man/)
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-7.svg)](http://erp7.zeroincombenze.it)
 
-OpenERP account financial reports
-=================================
+Odoo account financial reports
+==============================
 
 This project aims to deal with modules related to financial reports. You'll
 find modules that print legal and official reports. This includes, among
