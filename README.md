@@ -10,6 +10,7 @@
 
 [![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
 ================================================================================================
+================================================================================================
 
 Odoo account financial reports
 
@@ -24,7 +25,9 @@ others:
 
 [//]: # (addons)
 
+
 Available addons
+----------------
 addon | version | summary
 --- | --- | ---
 [account_financial_report_qweb](account_financial_report_qweb/) | 10.0.1.0.1 | OCA Financial Reports
@@ -33,6 +36,7 @@ addon | version | summary
 
 
 Unported addons
+---------------
 addon | version | summary
 --- | --- | ---
 [account_chart_report](account_chart_report/) | 8.0.1.0.0 (unported) | Print chart of accounts
