@@ -39,4 +39,25 @@ is mainly designed for Italian law and markeplace.
 Everytime, every Odoo DB and customized code can be deployed on local server too.
 
 [//]: # (end copyright)
+[//]: # (addons)
+
+
+Available addons
+----------------
+addon | version | OCA version | summary
+--- | --- | --- | ---
+[account_chart_report](account_chart_report/) | 1.0 |  N/D  | Print chart of accounts
+[account_export_csv](account_export_csv/) | 1.1 |  N/D  | Account Export CSV
+[account_financial_report](account_financial_report/) | 2.0 |  N/D  | Common financial reports
+[account_financial_report_horizontal](account_financial_report_horizontal/) | 0.2 |  N/D  | Accounting Financial Reports Horizontal
+[account_financial_report_webkit](account_financial_report_webkit/) | 1.1.0 |  N/D  | Financial Reports - Webkit
+[account_financial_report_webkit_xls](account_financial_report_webkit_xls/) | 0.4 |  N/D  | Add XLS export to accounting reports
+[account_journal_report_xls](account_journal_report_xls/) | 0.2 |  N/D  | Financial Journal reports
+[account_move_line_report_xls](account_move_line_report_xls/) | 0.6 |  N/D  | Account Move Line XLS export
+[account_partner_aged_statement_webkit](account_partner_aged_statement_webkit/) | 1.0 |  N/D  | Partner Aged Statement
+[mis_builder](mis_builder/) | 0.2 |  N/D  | Build 'Management Information System' Reports and Dashboards
+[mis_builder_demo](mis_builder_demo/) | 0.1 |  N/D  | Demo data for the mis_builder module
+
+[//]: # (end addons)
+
 [![chat with us](https://www.shs-av.com/wp-content/chat_with_us.gif)](https://tawk.to/85d4f6e06e68dd4e358797643fe5ee67540e408b)
