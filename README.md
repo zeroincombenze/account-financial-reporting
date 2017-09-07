@@ -8,7 +8,7 @@
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-7.svg)](http://erp7.zeroincombenze.it)
 
 
-[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
+[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
 ================================================================================================
 ================================================================================================
 
@@ -46,17 +46,17 @@ Available addons
 ----------------
 addon | version | OCA version | summary
 --- | --- | --- | ---
-[account_chart_report](account_chart_report/) | 1.0 |  N/D  | Print chart of accounts
-[account_export_csv](account_export_csv/) | 1.1 |  N/D  | Account Export CSV
-[account_financial_report](account_financial_report/) | 2.0 |  N/D  | Common financial reports
-[account_financial_report_horizontal](account_financial_report_horizontal/) | 0.2 |  N/D  | Accounting Financial Reports Horizontal
-[account_financial_report_webkit](account_financial_report_webkit/) | 1.1.0 |  N/D  | Financial Reports - Webkit
-[account_financial_report_webkit_xls](account_financial_report_webkit_xls/) | 0.4 |  N/D  | Add XLS export to accounting reports
-[account_journal_report_xls](account_journal_report_xls/) | 0.2 |  N/D  | Financial Journal reports
-[account_move_line_report_xls](account_move_line_report_xls/) | 0.6 |  N/D  | Account Move Line XLS export
-[account_partner_aged_statement_webkit](account_partner_aged_statement_webkit/) | 1.0 |  N/D  | Partner Aged Statement
-[mis_builder](mis_builder/) | 0.2 |  N/D  | Build 'Management Information System' Reports and Dashboards
-[mis_builder_demo](mis_builder_demo/) | 0.1 |  N/D  | Demo data for the mis_builder module
+[account_chart_report](account_chart_report/) | 1.0 | :repeat: | Print chart of accounts
+[account_export_csv](account_export_csv/) | 1.1 | :repeat: | Account Export CSV
+[account_financial_report](account_financial_report/) | 2.0 | :repeat: | Common financial reports
+[account_financial_report_horizontal](account_financial_report_horizontal/) | 0.2 | :repeat: | Accounting Financial Reports Horizontal
+[account_financial_report_webkit](account_financial_report_webkit/) | 1.1.0 | :repeat: | Financial Reports - Webkit
+[account_financial_report_webkit_xls](account_financial_report_webkit_xls/) | 0.4 | :repeat: | Add XLS export to accounting reports
+[account_journal_report_xls](account_journal_report_xls/) | 0.2 | :repeat: | Financial Journal reports
+[account_move_line_report_xls](account_move_line_report_xls/) | 0.6 | :repeat: | Account Move Line XLS export
+[account_partner_aged_statement_webkit](account_partner_aged_statement_webkit/) | 1.0 | :repeat: | Partner Aged Statement
+[mis_builder](mis_builder/) | 0.2 | :repeat: | Build 'Management Information System' Reports and Dashboards
+[mis_builder_demo](mis_builder_demo/) | 0.1 | :repeat: | Demo data for the mis_builder module
 
 [//]: # (end addons)
 
