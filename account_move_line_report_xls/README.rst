@@ -23,6 +23,7 @@ Installation
 
 
 
+
 To install this module, you need also the **report_xls**
 module located in:
 
@@ -32,7 +33,10 @@ Configuration
 -------------
 
 
+
 Usage
+-----
+
 -----
 
 -----
@@ -71,12 +75,15 @@ Known issues / Roadmap
 ----------------------
 
 
+
 Bug Tracker
 -----------
 
 
+
 Credits
 -------
+
 
 
 
@@ -86,7 +93,9 @@ Author
 [![Odoo Italia Associazione]]
 
 
+
 ### Contributors
+
 
 
 * Guillaume Auger <guillaume.auger@savoirfairelinux.com>
@@ -98,6 +107,8 @@ Icon
 ### Funders
 
 ### Maintainer
+
+
 
 
 
