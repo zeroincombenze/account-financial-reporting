@@ -24,8 +24,10 @@ Installation
 ------------
 
 
+
 Configuration
 -------------
+
 
 
 
@@ -35,6 +37,8 @@ Users willing to access to this report should have proper Accounting & Finance r
 #. In *Application / Accounting & Finance*, select *Accountant* or *Adviser* options.
 
 Usage
+-----
+
 -----
 
 -----
@@ -56,8 +60,10 @@ Known issues / Roadmap
 ----------------------
 
 
+
 Bug Tracker
 -----------
+
 
 
 
@@ -71,10 +77,13 @@ Credits
 
 
 
+
 [![Odoo Italia Associazione]]
 
 
+
 ### Contributors
+
 
 
 
@@ -86,6 +95,8 @@ Credits
 ### Funders
 
 ### Maintainer
+
+
 
 
 
