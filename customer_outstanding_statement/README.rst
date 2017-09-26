@@ -29,8 +29,10 @@ Installation
 
 
 
+
 Configuration
 -------------
+
 
 
 
@@ -42,6 +44,8 @@ Users willing to access to this report should have proper Accounting & Finance r
 #. In *Application / Accounting & Finance*, select *Accountant* or *Adviser* options.
 
 Usage
+-----
+
 -----
 
 -----
@@ -69,8 +73,10 @@ Known issues / Roadmap
 
 
 
+
 Bug Tracker
 -----------
+
 
 
 
@@ -88,11 +94,13 @@ Credits
 
 
 
+
 Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
 [![Odoo Italia Associazione]]
+
 
 
 
@@ -103,11 +111,14 @@ Images
 
 
 
+
 * Miquel Raïch <miquel.raich@eficent.com>
 
 ### Funders
 
 ### Maintainer
+
+
 
 
 

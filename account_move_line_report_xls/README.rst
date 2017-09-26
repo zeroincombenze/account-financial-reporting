@@ -25,6 +25,7 @@ Installation
 
 
 
+
 To install this module, you need also the **report_xls**
 module located in:
 
@@ -36,7 +37,10 @@ Configuration
 
 
 
+
 Usage
+-----
+
 -----
 
 -----
@@ -81,14 +85,17 @@ Known issues / Roadmap
 
 
 
+
 Bug Tracker
 -----------
 
 
 
 
+
 Credits
 -------
+
 
 
 
@@ -102,7 +109,9 @@ Author
 
 
 
+
 ### Contributors
+
 
 
 
@@ -116,6 +125,8 @@ Icon
 ### Funders
 
 ### Maintainer
+
+
 
 
 
