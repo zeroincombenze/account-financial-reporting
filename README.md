@@ -13,6 +13,7 @@
 ================================================================================================
 
 Odoo account financial reports
+==============================
 
 This project aims to deal with modules related to financial reports. You'll 
 find modules that print legal and official reports. This includes, among 
@@ -30,9 +31,9 @@ Available addons
 ----------------
 addon | version | OCA version | summary
 --- | --- | --- | ---
-[account_financial_report_qweb](account_financial_report_qweb/) | 10.0.1.0.1 | 10.0.1.1.1 | OCA Financial Reports
+[account_financial_report_qweb](account_financial_report_qweb/) | 10.0.1.0.1 | 10.0.1.2.0 | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 10.0.1.1.0 | 10.0.1.1.1 | Compute tax balances based on date range
-[mis_builder](mis_builder/) | 10.0.2.0.2 | :repeat: | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 10.0.2.0.2 | :x: | Build 'Management Information System' Reports and Dashboards
 
 
 Unported addons
@@ -42,10 +43,10 @@ addon | version | OCA version | summary
 [account_chart_report](account_chart_report/) | 8.0.1.0.0 (unported) | :repeat: | Print chart of accounts
 [account_export_csv](account_export_csv/) | 8.0.1.1.0 (unported) | :repeat: | Account Export CSV
 [account_financial_report](account_financial_report/) | 2.0 (unported) | :repeat: | Common financial reports
-[account_financial_report_horizontal](account_financial_report_horizontal/) | 8.0.0.3.0 (unported) | :repeat: | Accounting Financial Reports Horizontal
+[account_financial_report_horizontal](account_financial_report_horizontal/) | 8.0.0.3.0 (unported) | 10.0.1.0.0 | Accounting Financial Reports Horizontal
 [account_journal_report_xls](account_journal_report_xls/) | 8.0.0.2.0 (unported) | :repeat: | Financial Journal reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 8.0.0.6.0 (unported) | :repeat: | Journal Items Excel export
-[mis_builder_demo](mis_builder_demo/) | 9.0.1.0.0 (unported) | :repeat: | Demo data for the mis_builder module
+[mis_builder_demo](mis_builder_demo/) | 9.0.1.0.0 (unported) | :x: | Demo data for the mis_builder module
 
 [//]: # (end addons)
 

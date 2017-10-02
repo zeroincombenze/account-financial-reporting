@@ -14,6 +14,7 @@
 =================
 
 Journal Items Excel Export
+==========================
 
 This module extends the functionality of the journal items 
 ('account.move.line') list view and allow you to export the selected lines.
@@ -39,6 +40,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -104,7 +107,6 @@ Credits
 Author
 * Luc De Meyer, Noviat <info@noviat.com>
 
-[![Odoo Italia Associazione]]
 
 
 

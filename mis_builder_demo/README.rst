@@ -14,6 +14,7 @@
 =========================
 
 MIS Builder demo data
+=====================
 
 This module adds some demo data for the mis_builder module.
 
@@ -36,6 +37,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -74,7 +77,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 
