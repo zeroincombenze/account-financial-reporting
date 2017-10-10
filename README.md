@@ -13,6 +13,7 @@
 ================================================================================================
 
 Odoo account financial reports
+==============================
 
 This project aims to deal with modules related to financial reports. You'll 
 find modules that print legal and official reports. This includes, among 
@@ -36,7 +37,7 @@ addon | version | OCA version | summary
 [account_tax_balance](account_tax_balance/) | 9.0.1.1.0 | :repeat: | Compute tax balances based on date range
 [customer_activity_statement](customer_activity_statement/) | 9.0.1.0.0 | :repeat: | OCA Financial Reports
 [customer_outstanding_statement](customer_outstanding_statement/) | 9.0.1.0.0 | :repeat: | OCA Financial Reports
-[mis_builder](mis_builder/) | 9.0.2.0.2 | :repeat: | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 9.0.2.0.2 | :x: | Build 'Management Information System' Reports and Dashboards
 
 
 Unported addons
@@ -48,7 +49,7 @@ addon | version | OCA version | summary
 [account_financial_report](account_financial_report/) | 2.0 (unported) | :repeat: | Common financial reports
 [account_journal_report_xls](account_journal_report_xls/) | 8.0.0.2.0 (unported) | :x: | Financial Journal reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 8.0.0.6.0 (unported) | :repeat: | Journal Items Excel export
-[mis_builder_demo](mis_builder_demo/) | 9.0.1.0.0 (unported) | :repeat: | Demo data for the mis_builder module
+[mis_builder_demo](mis_builder_demo/) | 9.0.1.0.0 (unported) | :x: | Demo data for the mis_builder module
 
 [//]: # (end addons)
 

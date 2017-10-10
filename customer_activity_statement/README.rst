@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Print Customer Activity Statement
+=================================
 
 The activity statement provides details of all activity on the customer receivables
 between two selected dates. This includes all invoices, refunds and payments.
@@ -46,6 +47,8 @@ Users willing to access to this report should have proper Accounting & Finance r
 #. In *Application / Accounting & Finance*, select *Accountant* or *Adviser* options.
 
 Usage
+-----
+
 -----
 
 -----
@@ -101,7 +104,6 @@ Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
-[![Odoo Italia Associazione]]
 
 
 

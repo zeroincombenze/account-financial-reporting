@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 account_financial_report_qweb
+=============================
 
 This module adds a set of financial reports. They are accessible under
 Accunting / Reporting / OCA Reports.
@@ -43,6 +44,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -85,7 +88,6 @@ Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
-[![Odoo Italia Associazione]]
 
 
 

@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Tax Balances
+============
 
 This module allows to compute tax balances within a certain date range.
 It depends on date_range module and exposes 'compute' methods that can be called by other modules (like localization ones)
@@ -34,6 +35,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -88,7 +91,6 @@ Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
-[![Odoo Italia Associazione]]
 
 
 

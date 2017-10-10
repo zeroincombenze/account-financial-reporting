@@ -14,6 +14,7 @@
 =========================
 
 Accounting Financial Reports Horizontal
+=======================================
 
 This addon provides a balance sheet and profit and loss report in landscape mode with assets to the left and liabilities to the right as is common in Italy and the Netherlands.
 
@@ -32,6 +33,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -68,7 +71,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 

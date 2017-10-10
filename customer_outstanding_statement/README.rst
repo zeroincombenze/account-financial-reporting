@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Print Customer Outstanding Statement
+====================================
 
 The outstanding statement provides details of all outstanding customer receivables
 up to a particular date. This includes all unpaid invoices, unclaimed refunds and
@@ -44,6 +45,8 @@ Users willing to access to this report should have proper Accounting & Finance r
 #. In *Application / Accounting & Finance*, select *Accountant* or *Adviser* options.
 
 Usage
+-----
+
 -----
 
 -----
@@ -99,7 +102,6 @@ Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
-[![Odoo Italia Associazione]]
 
 
 

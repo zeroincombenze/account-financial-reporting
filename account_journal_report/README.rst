@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Journal Report
+==============
 
 Adds the following report in PDF and XLSX format:
 
@@ -41,6 +42,8 @@ Users willing to access to this report should have proper Accounting & Finance r
 #. In *Application / Accounting & Finance*, select *Accountant* or *Adviser* options.
 
 Usage
+-----
+
 -----
 
 -----
@@ -92,7 +95,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 
