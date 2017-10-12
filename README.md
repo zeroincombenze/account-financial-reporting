@@ -56,8 +56,8 @@ addon | version | OCA version | summary
 [account_journal_report_xls](account_journal_report_xls/) | 0.2 | :repeat: | Financial Journal reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 0.6 | :repeat: | Account Move Line XLS export
 [account_partner_aged_statement_webkit](account_partner_aged_statement_webkit/) | 1.0 | :repeat: | Partner Aged Statement
-[mis_builder](mis_builder/) | 0.2 | :repeat: | Build 'Management Information System' Reports and Dashboards
-[mis_builder_demo](mis_builder_demo/) | 0.1 | :repeat: | Demo data for the mis_builder module
+[mis_builder](mis_builder/) | 0.2 | :x: | Build 'Management Information System' Reports and Dashboards
+[mis_builder_demo](mis_builder_demo/) | 0.1 | :x: | Demo data for the mis_builder module
 
 [//]: # (end addons)
 
