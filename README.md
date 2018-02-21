@@ -8,13 +8,43 @@
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-8.svg)](http://erp8.zeroincombenze.it)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
-================================================================================================
 
 <<<<<<< HEAD
 >>>>>>> 4ba35cc4c0f4ae677359884b75543899a7e92fb0
 
 Odoo account financial reports
+==============================
 
 This project aims to deal with modules related to financial reports. You'll 
 find modules that print legal and official reports. This includes, among 
@@ -27,25 +57,28 @@ others:
 
 [//]: # (addons)
 
+
 Available addons
-addon | version | summary
---- | --- | ---
-[account_chart_report](account_chart_report/) | 8.0.1.0.0 | Print chart of accounts
-[account_export_csv](account_export_csv/) | 8.0.1.1.0 | Account Export CSV
-[account_financial_report_horizontal](account_financial_report_horizontal/) | 8.0.0.3.0 | Accounting Financial Reports Horizontal
-[account_financial_report_webkit](account_financial_report_webkit/) | 8.0.1.2.0 | Financial Reports - Webkit
-[account_financial_report_webkit_xls](account_financial_report_webkit_xls/) | 8.0.0.4.0 | Add XLS export to accounting reports
-[account_journal_report_xls](account_journal_report_xls/) | 8.0.0.2.0 | Financial Journal reports
-[account_move_line_report_xls](account_move_line_report_xls/) | 8.0.0.6.0 | Journal Items Excel export
-[account_tax_report_no_zeroes](account_tax_report_no_zeroes/) | 8.0.1.0.0 | Account tax report without zeroes
-[mis_builder](mis_builder/) | 8.0.1.0.0 | Build 'Management Information System' Reports and Dashboards
-[mis_builder_demo](mis_builder_demo/) | 8.0.1.0.0 | Demo data for the mis_builder module
+----------------
+addon | version | OCA version | summary
+--- | --- | --- | ---
+[account_chart_report](account_chart_report/) | 8.0.1.0.0 | :repeat: | Print chart of accounts
+[account_export_csv](account_export_csv/) | 8.0.1.1.0 | :repeat: | Account Export CSV
+[account_financial_report_horizontal](account_financial_report_horizontal/) | 8.0.0.3.0 | :repeat: | Accounting Financial Reports Horizontal
+[account_financial_report_webkit](account_financial_report_webkit/) | 8.0.1.2.0 | 8.0.1.2.1 | Financial Reports - Webkit
+[account_financial_report_webkit_xls](account_financial_report_webkit_xls/) | 8.0.0.4.0 | 8.0.1.0.0 | Add XLS export to accounting reports
+[account_journal_report_xls](account_journal_report_xls/) | 8.0.0.2.0 | :repeat: | Financial Journal reports
+[account_move_line_report_xls](account_move_line_report_xls/) | 8.0.0.6.0 | :repeat: | Journal Items Excel export
+[account_tax_report_no_zeroes](account_tax_report_no_zeroes/) | 8.0.1.0.0 | :repeat: | Account tax report without zeroes
+[mis_builder](mis_builder/) | 8.0.1.0.0 | :x: | Build 'Management Information System' Reports and Dashboards
+[mis_builder_demo](mis_builder_demo/) | 8.0.1.0.0 | :x: | Demo data for the mis_builder module
 
 
 Unported addons
-addon | version | summary
---- | --- | ---
-[account_financial_report](account_financial_report/) | 2.0 (unported) | Common financial reports
+---------------
+addon | version | OCA version | summary
+--- | --- | --- | ---
+[account_financial_report](account_financial_report/) | 2.0 (unported) | :repeat: | Common financial reports
 
 [//]: # (end addons)
 
