@@ -62,6 +62,8 @@
 
 
 
+
+
 [![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
 
 Odoo account financial reports
@@ -83,7 +85,7 @@ Available addons
 ----------------
 addon | version | OCA version | summary
 --- | --- | --- | ---
-[account_financial_report_qweb](account_financial_report_qweb/) | 10.0.1.0.1 | 10.0.1.5.0 | OCA Financial Reports
+[account_financial_report_qweb](account_financial_report_qweb/) | 10.0.1.0.1 | 10.0.1.5.1 | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 10.0.1.1.0 | 10.0.1.1.1 | Compute tax balances based on date range
 [mis_builder](mis_builder/) | 10.0.2.0.2 | :x: | Build 'Management Information System' Reports and Dashboards
 
