@@ -80,6 +80,8 @@
 
 
 
+
+
 [![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
 
 Odoo account financial reports
@@ -99,27 +101,27 @@ others:
 
 Available addons
 ----------------
-addon | version | OCA version | summary
---- | --- | --- | ---
-[account_financial_report_horizontal](account_financial_report_horizontal/) | 9.0.0.0.0 | :repeat: | Accounting Financial Reports Horizontal
-[account_financial_report_qweb](account_financial_report_qweb/) | 9.0.1.0.2 | :repeat: | OCA Financial Reports
-[account_journal_report](account_journal_report/) | 9.0.1.0.0 | :repeat: | Journal Report
-[account_tax_balance](account_tax_balance/) | 9.0.1.1.0 | :repeat: | Compute tax balances based on date range
-[customer_activity_statement](customer_activity_statement/) | 9.0.1.0.0 | 9.0.1.1.0 | OCA Financial Reports
-[customer_outstanding_statement](customer_outstanding_statement/) | 9.0.1.0.0 | 9.0.1.1.0 | OCA Financial Reports
-[mis_builder](mis_builder/) | 9.0.2.0.2 | :x: | Build 'Management Information System' Reports and Dashboards
+addon | version | summary
+--- | --- | ---
+[account_financial_report_horizontal](account_financial_report_horizontal/) | 9.0.0.0.0 | Accounting Financial Reports Horizontal
+[account_financial_report_qweb](account_financial_report_qweb/) | 9.0.1.0.2 | OCA Financial Reports
+[account_journal_report](account_journal_report/) | 9.0.1.0.0 | Journal Report
+[account_tax_balance](account_tax_balance/) | 9.0.1.1.0 | Compute tax balances based on date range
+[customer_activity_statement](customer_activity_statement/) | 9.0.1.0.0 | OCA Financial Reports
+[customer_outstanding_statement](customer_outstanding_statement/) | 9.0.1.0.0 | OCA Financial Reports
+[mis_builder](mis_builder/) | 9.0.2.0.2 | Build 'Management Information System' Reports and Dashboards
 
 
 Unported addons
 ---------------
-addon | version | OCA version | summary
---- | --- | --- | ---
-[account_chart_report](account_chart_report/) | 8.0.1.0.0 (unported) | :repeat: | Print chart of accounts
-[account_export_csv](account_export_csv/) | 8.0.1.1.0 (unported) | :repeat: | Account Export CSV
-[account_financial_report](account_financial_report/) | 2.0 (unported) | :repeat: | Common financial reports
-[account_journal_report_xls](account_journal_report_xls/) | 8.0.0.2.0 (unported) | :x: | Financial Journal reports
-[account_move_line_report_xls](account_move_line_report_xls/) | 8.0.0.6.0 (unported) | :repeat: | Journal Items Excel export
-[mis_builder_demo](mis_builder_demo/) | 9.0.1.0.0 (unported) | :x: | Demo data for the mis_builder module
+addon | version | summary
+--- | --- | ---
+[account_chart_report](account_chart_report/) | 8.0.1.0.0 (unported) | Print chart of accounts
+[account_export_csv](account_export_csv/) | 8.0.1.1.0 (unported) | Account Export CSV
+[account_financial_report](account_financial_report/) | 2.0 (unported) | Common financial reports
+[account_journal_report_xls](account_journal_report_xls/) | 8.0.0.2.0 (unported) | Financial Journal reports
+[account_move_line_report_xls](account_move_line_report_xls/) | 8.0.0.6.0 (unported) | Journal Items Excel export
+[mis_builder_demo](mis_builder_demo/) | 9.0.1.0.0 (unported) | Demo data for the mis_builder module
 
 [//]: # (end addons)
 
@@ -134,11 +136,13 @@ mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 
 **zeroincombenze®** is a trademark of [SHS-AV s.r.l.](http://www.shs-av.com/)
-which distributes and promotes **Odoo** ready-to-use on its own cloud infrastructure.
-[Zeroincombenze® distribution](http://wiki.zeroincombenze.org/en/Odoo)
+which distributes and promotes **Odoo** ready-to-use on own cloud infrastructure.
+[Zeroincombenze® distribution of Odoo](http://wiki.zeroincombenze.org/en/Odoo)
 is mainly designed for Italian law and markeplace.
-Everytime, every Odoo DB and customized code can be deployed on local server too.
+Users can download from [Zeroincombenze® distribution](https://github.com/zeroincombenze/OCB) and deploy on local server.
 
 [//]: # (end copyright)
+
+
 
 [![chat with us](https://www.shs-av.com/wp-content/chat_with_us.gif)](https://tawk.to/85d4f6e06e68dd4e358797643fe5ee67540e408b)
