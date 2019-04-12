@@ -4,11 +4,13 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 import time
-from . import abstract_test
-from odoo.tests.common import TransactionCase
+from odoo.api import Environment
+
+from odoo.tests import common
+from . import abstract_test_foreign_currency as a_t_f_c
 
 
-class TestGeneralLedger(abstract_test.AbstractTest):
+class TestGeneralLedger(a_t_f_c.AbstractTestForeignCurrency):
     """
         Technical tests for General Ledger Report.
     """
@@ -33,27 +35,61 @@ class TestGeneralLedger(abstract_test.AbstractTest):
         return {
             'date_from': time.strftime('%Y-01-01'),
             'date_to': time.strftime('%Y-12-31'),
-            'company_id': self.env.ref('base.main_company').id,
+            'company_id': self.company.id,
             'fy_start_date': time.strftime('%Y-01-01'),
+            'foreign_currency': True,
         }
 
     def _getAdditionalFiltersToBeTested(self):
-        return [
+        additional_filters = [
             {'only_posted_moves': True},
-            {'hide_account_balance_at_0': True},
+            {'hide_account_at_0': True},
             {'centralize': True},
-            {'only_posted_moves': True, 'hide_account_balance_at_0': True},
+            {'only_posted_moves': True, 'hide_account_at_0': True},
             {'only_posted_moves': True, 'centralize': True},
-            {'hide_account_balance_at_0': True, 'centralize': True},
+            {'hide_account_at_0': True, 'centralize': True},
             {
                 'only_posted_moves': True,
-                'hide_account_balance_at_0': True,
+                'hide_account_at_0': True,
                 'centralize': True
             },
         ]
 
+        # Add `show_analytic_tags` filter on each cases
+        additional_filters_with_show_tags = []
+        for additional_filter in additional_filters:
+            additional_filter['show_analytic_tags'] = True
+            additional_filters_with_show_tags.append(
+                additional_filter
+            )
+        additional_filters += additional_filters_with_show_tags
 
-class TestGeneralLedgerReport(TransactionCase):
+        # Add `filter_analytic_tag_ids` filter on each cases
+        analytic_tag = self.env['account.analytic.tag'].create({
+            'name': 'TEST tag'
+        })
+        # Define all move lines on this tag
+        # (this test just check with the all filters, all works technically)
+        move_lines = self.env['account.move.line'].search([])
+        move_lines.write({
+            'analytic_tag_ids': [(6, False, analytic_tag.ids)],
+        })
+        additional_filters_with_filter_tags = []
+        for additional_filter in additional_filters:
+            additional_filter['filter_analytic_tag_ids'] = [
+                (6, False, analytic_tag.ids)
+            ]
+            additional_filters_with_filter_tags.append(
+                additional_filter
+            )
+        additional_filters += additional_filters_with_filter_tags
+
+        return additional_filters
+
+
+@common.at_install(False)
+@common.post_install(True)
+class TestGeneralLedgerReport(common.TransactionCase):
 
     def setUp(self):
         super(TestGeneralLedgerReport, self).setUp()
@@ -120,7 +156,7 @@ class TestGeneralLedgerReport(TransactionCase):
             'date_from': self.fy_date_start,
             'date_to': self.fy_date_end,
             'only_posted_moves': True,
-            'hide_account_balance_at_0': False,
+            'hide_account_at_0': False,
             'company_id': company.id,
             'fy_start_date': self.fy_date_start,
             })
@@ -342,10 +378,10 @@ class TestGeneralLedgerReport(TransactionCase):
 
         # Check the initial and final balance
         self.assertEqual(lines['unaffected'].initial_debit, 0)
-        self.assertEqual(lines['unaffected'].initial_credit, 0)
+        self.assertEqual(lines['unaffected'].initial_credit, 1000)
         self.assertEqual(lines['unaffected'].initial_balance, -1000)
-        self.assertEqual(lines['unaffected'].final_debit, -0)
-        self.assertEqual(lines['unaffected'].final_credit, 0)
+        self.assertEqual(lines['unaffected'].final_debit, 0)
+        self.assertEqual(lines['unaffected'].final_credit, 1000)
         self.assertEqual(lines['unaffected'].final_balance, -1000)
 
         # Add reversale move of the initial move the first day of fiscal year
@@ -367,10 +403,10 @@ class TestGeneralLedgerReport(TransactionCase):
 
         # Check the initial and final balance
         self.assertEqual(lines['unaffected'].initial_debit, 0)
-        self.assertEqual(lines['unaffected'].initial_credit, 0)
+        self.assertEqual(lines['unaffected'].initial_credit, 1000)
         self.assertEqual(lines['unaffected'].initial_balance, -1000)
         self.assertEqual(lines['unaffected'].final_debit, 1000)
-        self.assertEqual(lines['unaffected'].final_credit, 0)
+        self.assertEqual(lines['unaffected'].final_credit, 1000)
         self.assertEqual(lines['unaffected'].final_balance, 0)
 
         # Add another move at the end day of fiscal year
@@ -391,10 +427,10 @@ class TestGeneralLedgerReport(TransactionCase):
 
         # Check the initial and final balance
         self.assertEqual(lines['unaffected'].initial_debit, 0)
-        self.assertEqual(lines['unaffected'].initial_credit, 0)
+        self.assertEqual(lines['unaffected'].initial_credit, 1000)
         self.assertEqual(lines['unaffected'].initial_balance, -1000)
         self.assertEqual(lines['unaffected'].final_debit, 1000)
-        self.assertEqual(lines['unaffected'].final_credit, 3000)
+        self.assertEqual(lines['unaffected'].final_credit, 4000)
         self.assertEqual(lines['unaffected'].final_balance, -3000)
 
     def test_04_unaffected_account_balance_2_years(self):
@@ -425,10 +461,10 @@ class TestGeneralLedgerReport(TransactionCase):
         self.assertEqual(len(lines['unaffected']), 1)
 
         # Check the initial and final balance
-        self.assertEqual(lines['unaffected'].initial_debit, 0)
+        self.assertEqual(lines['unaffected'].initial_debit, 1000)
         self.assertEqual(lines['unaffected'].initial_credit, 0)
         self.assertEqual(lines['unaffected'].initial_balance, 1000)
-        self.assertEqual(lines['unaffected'].final_debit, 0)
+        self.assertEqual(lines['unaffected'].final_debit, 1000)
         self.assertEqual(lines['unaffected'].final_credit, 0)
         self.assertEqual(lines['unaffected'].final_balance, 1000)
 
@@ -458,9 +494,61 @@ class TestGeneralLedgerReport(TransactionCase):
         self.assertEqual(len(lines['unaffected']), 1)
 
         # Check the initial and final balance
-        self.assertEqual(lines['unaffected'].initial_debit, 0)
+        self.assertEqual(lines['unaffected'].initial_debit, 500)
         self.assertEqual(lines['unaffected'].initial_credit, 0)
         self.assertEqual(lines['unaffected'].initial_balance, 500)
-        self.assertEqual(lines['unaffected'].final_debit, 0)
+        self.assertEqual(lines['unaffected'].final_debit, 500)
         self.assertEqual(lines['unaffected'].final_credit, 0)
         self.assertEqual(lines['unaffected'].final_balance, 500)
+
+    def test_partner_filter(self):
+        partner_1 = self.env.ref('base.res_partner_1')
+        partner_2 = self.env.ref('base.res_partner_2')
+        partner_3 = self.env.ref('base.res_partner_3')
+        partner_4 = self.env.ref('base.res_partner_4')
+        partner_1.write({'is_company': False,
+                         'parent_id': partner_2.id})
+        partner_3.write({'is_company': False})
+
+        expected_list = [partner_2.id, partner_3.id, partner_4.id]
+        context = {'active_ids': [
+            partner_1.id, partner_2.id, partner_3.id, partner_4.id
+        ],
+            'active_model': 'res.partner'}
+
+        wizard = self.env["general.ledger.report.wizard"].with_context(context)
+        self.assertEqual(wizard._default_partners(), expected_list)
+
+    def test_validate_date(self):
+        company_id = self.env.ref('base.main_company')
+        company_id.write({
+            'fiscalyear_last_day': 31,
+            'fiscalyear_last_month': 12,
+        })
+        cr = self.registry.cursor()
+        user = self.env.ref('base.user_root').with_context({
+            'company_id': company_id.id})
+        env = Environment(cr, user.id, {})
+        wizard = env["general.ledger.report.wizard"]
+        self.assertEqual(wizard._init_date_from(),
+                         time.strftime('%Y') + '-01-01')
+
+    def test_validate_date_range(self):
+        type = self.env['date.range.type'].create({
+            'name': 'Fiscal year',
+            'company_id': False,
+            'allow_overlap': False
+        })
+
+        dr = self.env['date.range'].create({
+            'name': 'FS2015',
+            'date_start': '2018-01-01',
+            'date_end': '2018-12-31',
+            'type_id': type.id,
+        })
+
+        wizard = self.env["general.ledger.report.wizard"].create({
+            'date_range_id': dr.id})
+        wizard.onchange_date_range_id()
+        self.assertEqual(wizard.date_from, '2018-01-01')
+        self.assertEqual(wizard.date_to, '2018-12-31')

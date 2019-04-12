@@ -4,10 +4,11 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 import time
-from . import abstract_test
+
+from . import abstract_test_foreign_currency as a_t_f_c
 
 
-class TestTrialBalance(abstract_test.AbstractTest):
+class TestTrialBalance(a_t_f_c.AbstractTestForeignCurrency):
     """
         Technical tests for Trial Balance Report.
     """
@@ -33,19 +34,21 @@ class TestTrialBalance(abstract_test.AbstractTest):
             'date_to': time.strftime('%Y-12-31'),
             'company_id': self.env.ref('base.main_company').id,
             'fy_start_date': time.strftime('%Y-01-01'),
+            'foreign_currency': True,
+            'show_partner_details': True,
         }
 
     def _getAdditionalFiltersToBeTested(self):
         return [
             {'only_posted_moves': True},
-            {'hide_account_balance_at_0': True},
+            {'hide_account_at_0': True},
             {'show_partner_details': True},
-            {'only_posted_moves': True, 'hide_account_balance_at_0': True},
+            {'only_posted_moves': True, 'hide_account_at_0': True},
             {'only_posted_moves': True, 'show_partner_details': True},
-            {'hide_account_balance_at_0': True, 'show_partner_details': True},
+            {'hide_account_at_0': True, 'show_partner_details': True},
             {
                 'only_posted_moves': True,
-                'hide_account_balance_at_0': True,
+                'hide_account_at_0': True,
                 'show_partner_details': True
             },
         ]
