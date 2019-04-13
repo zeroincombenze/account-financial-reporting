@@ -29,44 +29,45 @@ Progetto basato sui moduli OCA per la gestione delle stampa finanziare.
 Avaiable Addons / Moduli disponibili
 ------------------------------------
 
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| Name / Nome                          | Version    | OCA Ver.   | Description / Descrizione                          |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| account_bank_statement_line_reconcil | 10.0.1.0.0 | |same|     | OCA Financial Reports                              |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| account_chart_report                 | |halt|     | |halt|     | Print chart of accounts                            |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| account_export_csv                   | |halt|     | |halt|     | Account Export CSV                                 |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| account_financial_report             | |halt|     | |halt|     | Common financial reports                           |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| account_financial_report_date_range  | 10.0.1.0.0 | |same|     | Add Date Range field to the Odoo OE standard addon |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| account_financial_report_horizontal  | 10.0.1.0.0 | |same|     | Accounting Financial Report Horizontal             |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| account_financial_report_qweb        | 10.0.3.0.1 | |same|     | OCA Financial Reports                              |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| account_journal_report_xls           | |halt|     | |halt|     | Financial Journal reports                          |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| account_move_line_report_xls         | 10.0.1.0.0 | |same|     | Journal Items Excel export                         |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| account_tax_balance                  | 10.0.1.1.1 | |same|     | Compute tax balances based on date range           |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| customer_activity_statement          | 10.0.1.1.0 | |same|     | OCA Financial Reports                              |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| customer_outstanding_statement       | 10.0.1.1.0 | |same|     | OCA Financial Reports                              |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| mis_builder                          | 10.0.2.0.2 | |no_check| | Build 'Management Information System' Reports and  |
-+--------------------------------------+------------+------------+----------------------------------------------------+
-| mis_builder_demo                     | |halt|     | |no_check| | Demo data for the mis_builder module               |
-+--------------------------------------+------------+------------+----------------------------------------------------+
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| Name / Nome                          | Version    | OCA Ver.   | Description / Descrizione                                                        |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_bank_statement_line_reconcil | 10.0.1.0.0 | |same|     | OCA Financial Reports                                                            |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_chart_report                 | |halt|     | |halt|     | Print chart of accounts                                                          |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_export_csv                   | |halt|     | |halt|     | Account Export CSV                                                               |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_financial_report             | |halt|     | |halt|     | Common financial reports                                                         |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_financial_report_date_range  | 10.0.1.0.0 | |same|     |  Add Date Range field to the Odoo OE standard addons financial reports wizard.   |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_financial_report_horizontal  | 10.0.1.0.0 | |same|     | Accounting Financial Report Horizontal                                           |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_financial_report_qweb        | 10.0.3.0.1 | |same|     | OCA Financial Reports                                                            |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_journal_report_xls           | |halt|     | |halt|     | Financial Journal reports                                                        |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_move_line_report_xls         | 10.0.1.0.0 | |same|     | Journal Items Excel export                                                       |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_tax_balance                  | 10.0.1.1.1 | |same|     | Compute tax balances based on date range                                         |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| customer_activity_statement          | 10.0.1.1.0 | |same|     | OCA Financial Reports                                                            |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| customer_outstanding_statement       | 10.0.1.1.0 | |same|     | OCA Financial Reports                                                            |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| mis_builder                          | 10.0.2.0.2 | |no_check| |  Build 'Management Information System' Reports and Dashboards                    |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| mis_builder_demo                     | |halt|     | |no_check| |  Demo data for the mis_builder module                                            |
++--------------------------------------+------------+------------+----------------------------------------------------------------------------------+
 
 
 OCA comparation / Confronto con OCA
 -----------------------------------
 
+
 +-----------------------------------------------------------------+-------------------+-----------------------+--------------------------------+
-| Description / Descrizione                                       | Odoo Italia       | OCA                   | Notes / Note                   |
+| Description / Descrizione                                       | Zeroincombenze    | OCA                   | Notes / Note                   |
 +-----------------------------------------------------------------+-------------------+-----------------------+--------------------------------+
 | Coverage / Copertura test                                       |  |Codecov Status| | |OCA Codecov Status|  | |OCA project|                  |
 +-----------------------------------------------------------------+-------------------+-----------------------+--------------------------------+
@@ -140,7 +141,7 @@ Support / Supporto
 ------------------
 
 
-|Zeroincombenze| This module is maintained by the `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
+|Zeroincombenze| This project is mainly maintained by the `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
 
 
@@ -202,9 +203,9 @@ which distributes and promotes ready-to-use **Odoo** on own cloud infrastructure
 `Zeroincombenze® distribution of Odoo <https://wiki.zeroincombenze.org/en/Odoo>`__
 is mainly designed to cover Italian law and markeplace.
 
-|it| **zeroincombenze®** è un marchio registrato di `SHS-AV s.r.l. <https://www.shs-av.com/>`__
-che distribuisce e promuove **Odoo** pronto all'uso sullla propria infrastuttura.
-La distribuzione `Zeroincombenze® è progettata per le esigenze del mercato italiano.
+|it| **zeroincombenze®** è un marchio registrato da `SHS-AV s.r.l. <https://www.shs-av.com/>`__
+che distribuisce e promuove **Odoo** pronto all'uso sulla propria infrastuttura.
+La distribuzione `Zeroincombenze® <https://wiki.zeroincombenze.org/en/Odoo>`__ è progettata per le esigenze del mercato italiano.
 
 
 |chat_with_us|
@@ -212,7 +213,8 @@ La distribuzione `Zeroincombenze® è progettata per le esigenze del mercato ita
 
 |
 
-Last Update / Ultimo aggiornamento: 2019-04-12
+
+Last Update / Ultimo aggiornamento: 2019-04-13
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status

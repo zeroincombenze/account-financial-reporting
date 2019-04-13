@@ -1,7 +1,7 @@
 
-=============================
-|icon| QWeb Financial Reports
-=============================
+========================================
+|icon| QWeb Financial Reports 10.0.3.0.1
+========================================
 
 
 **OCA Financial Reports**
@@ -17,7 +17,7 @@ Overview / Panoramica
 =====================
 
 |en| Account Financial Report
-------------------------
+-----------------------------
 
 This module adds a set of financial reports. They are accessible under
 
@@ -41,7 +41,7 @@ currency balances are not available.
 |
 
 |it| Stampa finanziare contabili
----------------------------
+--------------------------------
 
 Stampe finanziarie contabili sotto il menù:
 
@@ -60,8 +60,9 @@ Accounting > Reporting > OCA Reports.
 OCA comparation / Confronto con OCA
 -----------------------------------
 
+
 +-----------------------------------------------------------------+-------------------+-----------------------+--------------------------------+
-| Description / Descrizione                                       | Odoo Italia       | OCA                   | Notes / Note                   |
+| Description / Descrizione                                       | Zeroincombenze    | OCA                   | Notes / Note                   |
 +-----------------------------------------------------------------+-------------------+-----------------------+--------------------------------+
 | Coverage / Copertura test                                       |  |Codecov Status| | |OCA Codecov Status|  | |OCA project|                  |
 +-----------------------------------------------------------------+-------------------+-----------------------+--------------------------------+
@@ -177,8 +178,8 @@ An Enhancement Proposal may be submitted if your idea gains ground.
 
 |it| Se hai proposte per migliorare questo modulo, puoi inviare una mail a <cc@shs-av.com> per un iniziale contatto.
 
-History / Cronologia
---------------------
+ChangeLog History / Cronologia modifiche
+----------------------------------------
 
 10.0.3.0.0 (2019-01-09)
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -273,9 +274,9 @@ which distributes and promotes ready-to-use **Odoo** on own cloud infrastructure
 `Zeroincombenze® distribution of Odoo <https://wiki.zeroincombenze.org/en/Odoo>`__
 is mainly designed to cover Italian law and markeplace.
 
-|it| **zeroincombenze®** è un marchio registrato di `SHS-AV s.r.l. <https://www.shs-av.com/>`__
-che distribuisce e promuove **Odoo** pronto all'uso sullla propria infrastuttura.
-La distribuzione `Zeroincombenze® è progettata per le esigenze del mercato italiano.
+|it| **zeroincombenze®** è un marchio registrato da `SHS-AV s.r.l. <https://www.shs-av.com/>`__
+che distribuisce e promuove **Odoo** pronto all'uso sulla propria infrastuttura.
+La distribuzione `Zeroincombenze® <https://wiki.zeroincombenze.org/en/Odoo>`__ è progettata per le esigenze del mercato italiano.
 
 
 |chat_with_us|
@@ -283,7 +284,9 @@ La distribuzione `Zeroincombenze® è progettata per le esigenze del mercato ita
 
 |
 
-Last Update / Ultimo aggiornamento: 2019-04-12
+This module is part of account-financial-reporting project.
+
+Last Update / Ultimo aggiornamento: 2019-04-13
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
