@@ -286,7 +286,7 @@ La distribuzione `Zeroincombenze® <https://wiki.zeroincombenze.org/en/Odoo>`__ 
 
 This module is part of account-financial-reporting project.
 
-Last Update / Ultimo aggiornamento: 2019-04-13
+Last Update / Ultimo aggiornamento: 2019-04-15
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
