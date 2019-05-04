@@ -26,7 +26,7 @@ class OpenItemsReportWizard(models.TransientModel):
                                     ('all', 'All Entries')],
                                    string='Target Moves',
                                    required=True,
-                                   default='all')
+                                   default='posted')
     account_ids = fields.Many2many(
         comodel_name='account.account',
         string='Filter accounts',
@@ -53,6 +53,7 @@ class OpenItemsReportWizard(models.TransientModel):
              'account currency is not setup through chart of accounts '
              'will display initial and final balance in that currency.'
     )
+    overdue_only = fields.Boolean()
 
     @api.onchange('company_id')
     def onchange_company_id(self):
@@ -84,6 +85,7 @@ class OpenItemsReportWizard(models.TransientModel):
     def _default_foreign_currency(self):
         if self.env.user.has_group('base.group_multi_currency'):
             return True
+        return False
 
     def _default_partners(self):
         context = self.env.context
@@ -153,6 +155,7 @@ class OpenItemsReportWizard(models.TransientModel):
             'company_id': self.company_id.id,
             'filter_account_ids': [(6, 0, self.account_ids.ids)],
             'filter_partner_ids': [(6, 0, self.partner_ids.ids)],
+            'overdue_only': self.overdue_only,
         }
 
     def _export(self, report_type):

@@ -33,6 +33,7 @@ class OpenItemsReport(models.TransientModel):
         comodel_name='report_open_items_qweb_account',
         inverse_name='report_id'
     )
+    overdue_only = fields.Boolean()
 
 
 class OpenItemsReportAccount(models.TransientModel):
@@ -197,7 +198,8 @@ class OpenItemsReportCompute(models.TransientModel):
 
     def _inject_account_values(self):
         """Inject report values for report_open_items_qweb_account."""
-        query_inject_account = """
+        if self.overdue_only:
+            query_inject_account = """
 WITH
     accounts AS
         (
@@ -210,7 +212,28 @@ WITH
             FROM
                 account_account a
             INNER JOIN
-                account_move_line ml ON a.id = ml.account_id AND ml.date <= %s
+                account_move_line ml ON a.id = ml.account_id AND
+                ml.date <= %s AND
+                ml.date_maturity <= %s
+            LEFT JOIN
+                res_currency c ON a.currency_id = c.id
+            """
+        else:
+            query_inject_account = """
+WITH
+    accounts AS
+        (
+            SELECT
+                a.id,
+                a.code,
+                a.name,
+                a.user_type_id,
+                c.id as currency_id
+            FROM
+                account_account a
+            INNER JOIN
+                account_move_line ml ON a.id = ml.account_id AND
+                ml.date <= %s
             LEFT JOIN
                 res_currency c ON a.currency_id = c.id
             """
@@ -265,10 +288,17 @@ SELECT
 FROM
     accounts a
         """
-        query_inject_account_params = (
-            self.date_at,
-            self.company_id.id,
-        )
+        if self.overdue_only:
+            query_inject_account_params = (
+                self.date_at,
+                self.date_at,
+                self.company_id.id,
+            )
+        else:
+            query_inject_account_params = (
+                self.date_at,
+                self.company_id.id,
+            )
         if self.filter_account_ids:
             query_inject_account_params += (
                 tuple(self.filter_account_ids.ids),
@@ -314,6 +344,9 @@ WITH
             INNER JOIN
                 account_move_line ml ON a.id = ml.account_id AND ml.date <= %s
         """
+        if self.overdue_only:
+            query_inject_partner += """ AND ml.date_maturity <= %s
+        """
         if self.only_posted_moves:
             query_inject_partner += """
             INNER JOIN
@@ -355,10 +388,17 @@ SELECT
 FROM
     accounts_partners ap
         """
-        query_inject_partner_params = (
-            self.date_at,
-            self.id,
-        )
+        if self.overdue_only:
+            query_inject_partner_params = (
+                self.date_at,
+                self.date_at,
+                self.id,
+            )
+        else:
+            query_inject_partner_params = (
+                self.date_at,
+                self.id,
+            )
         if self.filter_partner_ids:
             query_inject_partner_params += (
                 tuple(self.filter_partner_ids.ids),
@@ -595,6 +635,10 @@ WHERE
 AND
     ml.date <= %s
         """
+        if self.overdue_only:
+            query_inject_move_line += """ AND
+    ml.date_maturity <= %s
+        """
         if self.only_posted_moves:
             query_inject_move_line += """
 AND
@@ -617,18 +661,33 @@ ORDER BY
 ORDER BY
     a.code, ml.date, ml.id
             """
-        self.env.cr.execute(
-            query_inject_move_line,
-            (self.date_at,
-             self.date_at,
-             self.id,
-             self.date_at,
-             self.date_at,
-             self.id,
-             self.env.uid,
-             self.id,
-             self.date_at,)
-        )
+        if self.overdue_only:
+            self.env.cr.execute(
+                    query_inject_move_line,
+                    (self.date_at,
+                     self.date_at,
+                     self.id,
+                     self.date_at,
+                     self.date_at,
+                     self.id,
+                     self.env.uid,
+                     self.id,
+                     self.date_at,
+                     self.date_at,)
+                )
+        else:
+            self.env.cr.execute(
+                query_inject_move_line,
+                (self.date_at,
+                 self.date_at,
+                 self.id,
+                 self.date_at,
+                 self.date_at,
+                 self.id,
+                 self.env.uid,
+                 self.id,
+                 self.date_at,)
+            )
 
     def _compute_partners_and_accounts_cumul(self):
         """ Compute cumulative amount for

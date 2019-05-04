@@ -1,12 +1,12 @@
 
-========================================
-|icon| QWeb Financial Reports 10.0.3.0.1
-========================================
+============================================
+|icon| Customer Payment Follow-up Management
+============================================
 
 
-**OCA Financial Reports**
+**Module to do followup on customer unpaid invoices.**
 
-.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/account-financial-reporting/10.0/account_financial_report_qweb/static/description/icon.png
+.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/account-payment/10.0/account_followup/static/description/icon.png
 
 |Maturity| |Build Status| |Coverage Status| |Codecov Status| |license gpl| |Tech Doc| |Help| |Try Me|
 
@@ -16,42 +16,48 @@
 Overview / Panoramica
 =====================
 
-|en| Account Financial Report
------------------------------
+|en| Module to do followup on customer unpaid invoices.
+--------------------------------------------------
 
-This module adds a set of financial reports. They are accessible under
+This module allow you to do followup on your customer unpaid invoices, with multi-level recalls.
 
-Accounting > Reporting > OCA Reports.
 
-* General ledger
-* Trial Balance
-* Open Items
-* Aged Partner Balance
-* VAT Report
-* Journal Ledger
+You can define your multiple levels of recall through the menu:
 
-Currently General ledger, Trial Balance and Open Items are fully compatible with a foreign
-currency set up in account in order to display balances. Moreover, any foreign
-currency used in account move lines is properly shown.
+|menu| Configuration > Follow-up > Follow-up Levels
 
-In case that in an account has not been configured a second currency foreign
-currency balances are not available.
+Once it is defined, you can automatically print recalls every day through simply clicking on the menu:
+
+|menu| Payment Follow-Up > Send Email and letters
+
+It will generate a PDF / send emails / set manual actions according to the the different levels 
+of recall defined. You can define different policies for different companies. 
+
+Note that if you want to check the follow-up level for a given partner/account entry, you can do from in the menu:
+
+|menu| Reporting > Accounting > **Follow-ups Analysis
 
 
 |
 
-|it| Rapporti finanziari vari
------------------------------
+|it| Modulo per inviare solleciti di pagamento
+-----------------------------------------
 
-Stampe finanziarie contabili sotto il menù:
+Questo modulo permette di inviare i solleciti di pagamento delle fatture, con contenuti multilevello.
 
-Accounting > Reporting > OCA Reports.
+Potete definire i livelli dei contenuti dal menù:
 
-* Stampa mastrino
-* Bilancino
-* Partite aperte
-* Bilancio partner storico
-* Journal Ledger
+|menu| Configurazione > Solleciti di pagamento > Livelli di sollecito di pagamento
+
+Una volta definiti i liveeli, potete automaticamente inviare i solleciti con un click dal menù:
+
+|menu| Payment Follow-Up > Send Email and letters
+
+Il sistema genera un PDF o invia una email o imposta un'azione manuale in base al livello.
+
+Esiste anche un menù dei rapporti:
+
+|menu| Reporting > Accounting > **Follow-ups Analysis
 
 
 |
@@ -59,9 +65,8 @@ Accounting > Reporting > OCA Reports.
 OCA comparation / Confronto con OCA
 -----------------------------------
 
-
 +-----------------------------------------------------------------+-------------------+-----------------------+--------------------------------+
-| Description / Descrizione                                       | Zeroincombenze    | OCA                   | Notes / Note                   |
+| Description / Descrizione                                       | Odoo Italia       | OCA                   | Notes / Note                   |
 +-----------------------------------------------------------------+-------------------+-----------------------+--------------------------------+
 | Coverage / Copertura test                                       |  |Codecov Status| | |OCA Codecov Status|  | |OCA project|                  |
 +-----------------------------------------------------------------+-------------------+-----------------------+--------------------------------+
@@ -100,7 +105,7 @@ Installation / Installazione
 +---------------------------------+------------------------------------------+
 | Suggested deployment is:        | Posizione suggerita per l'installazione: |
 +---------------------------------+------------------------------------------+
-| /opt/odoo/10.0/account-financial-reporting/                                |
+| /opt/odoo/10.0/account-payment/                                            |
 +----------------------------------------------------------------------------+
 
 ::
@@ -110,7 +115,7 @@ Installation / Installazione
     cd ./tools
     ./install_tools.sh -p
     export PATH=$HOME/dev:$PATH
-    odoo_install_repository account-financial-reporting -b 10.0 -O zero
+    odoo_install_repository account-payment -b 10.0 -O zero
     for pkg in os0 z0lib; do
         pip install $pkg -U
     done
@@ -120,7 +125,7 @@ From UI: go to:
 
 * |menu| Setting > Activate Developer mode 
 * |menu| Apps > Update Apps List
-* |menu| Setting > Apps |right_do| Select **account_financial_report_qweb** > Install
+* |menu| Setting > Apps |right_do| Select **account_followup** > Install
 
 |
 
@@ -137,7 +142,7 @@ Upgrade / Aggiornamento
 
 ::
 
-    odoo_install_repository account-financial-reporting -b 10.0 -O zero -U
+    odoo_install_repository account-payment -b 10.0 -O zero -U
     # Adjust following statements as per your system
     sudo systemctl restart odoo
 
@@ -145,7 +150,7 @@ From UI: go to:
 
 * |menu| Setting > Activate Developer mode
 * |menu| Apps > Update Apps List
-* |menu| Setting > Apps |right_do| Select **account_financial_report_qweb** > Update
+* |menu| Setting > Apps |right_do| Select **account_followup** > Update
 
 |
 
@@ -164,7 +169,7 @@ Get involved / Ci mettiamo in gioco
 
 Bug reports are welcome! You can use the issue tracker to report bugs,
 and/or submit pull requests on `GitHub Issues
-<https://github.com/zeroincombenze/account-financial-reporting/issues>`_.
+<https://github.com/zeroincombenze/account-payment/issues>`_.
 
 In case of trouble, please check there if your issue has already been reported.
 
@@ -177,40 +182,11 @@ An Enhancement Proposal may be submitted if your idea gains ground.
 
 |it| Se hai proposte per migliorare questo modulo, puoi inviare una mail a <cc@shs-av.com> per un iniziale contatto.
 
-ChangeLog History / Cronologia modifiche
-----------------------------------------
-
-10.0.3.0.1 (2019-05-05)
-~~~~~~~~~~~~~~~~~~~~~~~
-
-* Selection overdue_only in Open Items report
-
-
-10.0.3.0.0 (2019-01-09)
-~~~~~~~~~~~~~~~~~~~~~~~
-
-* Improve multicompany related usability.
-* Improve performance in the General Ledger.
-* The reports now display an improved title that includes report name,
-  company and currency.
-
-
-10.0.2.0.0 (2018-11-29)
-~~~~~~~~~~~~~~~~~~~~~~~
-
-* The Trial Balance now allows to display the hierarchy of accounts
-* In the Trial Balance you can apply a filter by hierarchy levels
-* The Trial Balance shows the unaffected earnings account computed as:
-  initial balance: sum of past unaffected earnings + P&L result; debit, credit
-  and period balance: totals only for the unaffected earnings account.
-* In the Journal Ledger the field 'Journal' is now optional
-
-
 |
 |
 
-Credits / Didascalie
-====================
+Credits / Titoli di coda
+========================
 
 Copyright
 ---------
@@ -224,58 +200,14 @@ Odoo is a trademark of `Odoo S.A. <https://www.odoo.com/>`__ (formerly OpenERP)
 Authors / Autori
 ----------------
 
-* `Odoo Community Association (OCA) <https://odoo-community.org>`__
-* `Camptocamp SA <http://www.camptocamp.com>`__
-* `initOS GmbH <https://www.initos.com>`__
-* `redCOR AG <http://www.redcor.ch>`__
-* `ACSONE SA/NV <http://acsone.eu>`__
+* `Odoo SA <https://www.odoo.com>`__
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
 Contributors / Collaboratori
 ----------------------------
 
-* Jordi Ballester <jordi.ballester@eficient.com>
-* Yannick Vaucher <yannick.vaucher@camptocamp.com>
-* Simone Orsi <simone.orsi@abstract.com>
-* Leonardo Pistone <leonardo.pistone@camptocamp.com>
-* Damien Crier <damien.crier@camptocamp.com>
-* Andrea Stirpe <a.stirpe@onestein.nl>
-* Thomas Rehn <thomas.rehn@initos.com>
-* Andrea Gallina <4everamd@gmail.com>
-* Robert Rottermann <robert@redcor.ch>
-* Ciro Urselli <c.urselli@apuliasoftware.it>
-* Francesco Apruzzese <opencode@e-ware.org>
-* Lorenzo Battistini <lorenzo.battistini@agilebg.com>
-* Julien Coux <julien.coux@camptocamp.com>
-* Akim Juillerat <akim.juillerat@camptocamp.com>
-* Alexis de Lattre <alexis@via.ecp.fr>
-* Mihai Fekete <feketemihai@gmail.com>
-* Benjamin Willig <benjamin.willig@acsone.eu>
-* Miquel Raïch <miquel.raich@eficent.com>
-* Antonio M. Vigliotti <info@shs-av.com>
-
-Much of the work in this module was done at a sprint in Sorrento, Italy in
-April 2016.
-
-
-Acknowledges / Riconoscimenti
------------------------------
-
-+-----------------------------------+-------------------------------------------+
-| |en|                              | |it|                                      |
-+-----------------------------------+-------------------------------------------+
-| This software inherits from past  | Questo software eredita da versioni       |
-| versions some parts of code. Even | passate alcune parti di codice. Anche     |
-| if people did not actively        | se non hanno partecipato attivamente allo |
-| participate to development, we    | allo sviluppo, noi siamo grati a tutte le |
-| acknowledge them for their prior  | persone che precedentemente vi hanno      |
-| contributions.                    | contribuito.                              |
-+-----------------------------------+-------------------------------------------+
-
-Much of the work in this module was done at a sprint in Sorrento, Italy in
-April 2016.
-Much of the work in this module was done at a sprint in Sorrento, Italy in
-April 2016.
+* Odoo SA <info@odoo.com>
+* Antonio Maria Vigliotti <antoniomaria.vigliotti@gmail.com>
 
 |
 
@@ -287,9 +219,9 @@ which distributes and promotes ready-to-use **Odoo** on own cloud infrastructure
 `Zeroincombenze® distribution of Odoo <https://wiki.zeroincombenze.org/en/Odoo>`__
 is mainly designed to cover Italian law and markeplace.
 
-|it| **zeroincombenze®** è un marchio registrato da `SHS-AV s.r.l. <https://www.shs-av.com/>`__
-che distribuisce e promuove **Odoo** pronto all'uso sulla propria infrastuttura.
-La distribuzione `Zeroincombenze® <https://wiki.zeroincombenze.org/en/Odoo>`__ è progettata per le esigenze del mercato italiano.
+|it| **zeroincombenze®** è un marchio registrato di `SHS-AV s.r.l. <https://www.shs-av.com/>`__
+che distribuisce e promuove **Odoo** pronto all'uso sullla propria infrastuttura.
+La distribuzione `Zeroincombenze® è progettata per le esigenze del mercato italiano.
 
 
 |chat_with_us|
@@ -297,15 +229,13 @@ La distribuzione `Zeroincombenze® <https://wiki.zeroincombenze.org/en/Odoo>`__ 
 
 |
 
-This module is part of account-financial-reporting project.
-
-Last Update / Ultimo aggiornamento: 2019-05-03
+Last Update / Ultimo aggiornamento: 2019-04-06
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
     :alt: Alfa
-.. |Build Status| image:: https://travis-ci.org/zeroincombenze/account-financial-reporting.svg?branch=10.0
-    :target: https://travis-ci.org/zeroincombenze/account-financial-reporting
+.. |Build Status| image:: https://travis-ci.org/zeroincombenze/account-payment.svg?branch=10.0
+    :target: https://travis-ci.org/zeroincombenze/account-payment
     :alt: github.com
 .. |license gpl| image:: https://img.shields.io/badge/licence-LGPL--3-7379c3.svg
     :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
@@ -313,14 +243,14 @@ Last Update / Ultimo aggiornamento: 2019-05-03
 .. |license opl| image:: https://img.shields.io/badge/licence-OPL-7379c3.svg
     :target: https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html
     :alt: License: OPL
-.. |Coverage Status| image:: https://coveralls.io/repos/github/zeroincombenze/account-financial-reporting/badge.svg?branch=10.0
-    :target: https://coveralls.io/github/zeroincombenze/account-financial-reporting?branch=10.0
+.. |Coverage Status| image:: https://coveralls.io/repos/github/zeroincombenze/account-payment/badge.svg?branch=10.0
+    :target: https://coveralls.io/github/zeroincombenze/account-payment?branch=10.0
     :alt: Coverage
-.. |Codecov Status| image:: https://codecov.io/gh/zeroincombenze/account-financial-reporting/branch/10.0/graph/badge.svg
-    :target: https://codecov.io/gh/OCA/account-financial-reporting/branch/10.0
+.. |Codecov Status| image:: https://codecov.io/gh/zeroincombenze/account-payment/branch/10.0/graph/badge.svg
+    :target: https://codecov.io/gh/OCA/account-payment/branch/10.0
     :alt: Codecov
-.. |OCA project| image:: https://raw.githubusercontent.com/zeroincombenze/account-financial-reporting/10.0/account_financial_report_qweb/static/description/Unknown badge-OCA
-    :target: https://github.com/OCA/account-financial-reporting/tree/10.0
+.. |OCA project| image:: Unknown badge-OCA
+    :target: https://github.com/OCA/account-payment/tree/10.0
     :alt: OCA
 .. |Tech Doc| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-10.svg
     :target: https://wiki.zeroincombenze.org/en/Odoo/10.0/dev
@@ -331,8 +261,8 @@ Last Update / Ultimo aggiornamento: 2019-05-03
 .. |Try Me| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg
     :target: https://erp10.zeroincombenze.it
     :alt: Try Me
-.. |OCA Codecov Status| image:: https://codecov.io/gh/OCA/account-financial-reporting/branch/10.0/graph/badge.svg
-    :target: https://codecov.io/gh/OCA/account-financial-reporting/branch/10.0
+.. |OCA Codecov Status| image:: https://codecov.io/gh/OCA/account-payment/branch/10.0/graph/badge.svg
+    :target: https://codecov.io/gh/OCA/account-payment/branch/10.0
     :alt: Codecov
 .. |Odoo Italia Associazione| image:: https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png
    :target: https://odoo-italia.org
