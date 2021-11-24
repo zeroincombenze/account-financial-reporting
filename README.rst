@@ -1,12 +1,8 @@
 
-===========================================
-|icon| Financial Reports - Webkit 8.0.1.2.1
-===========================================
-
-
-.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/account-financial-reporting/8.0/account_financial_report_webkit/static/description/icon.png
-
-|Maturity| |Build Status| |Codecov Status| |license gpl| |Try Me|
+================================================
+|Zeroincombenze| account-financial-reporting 8.0
+================================================
+|Build Status| |Codecov Status| |license gpl| |Try Me|
 
 
 .. contents::
@@ -16,144 +12,35 @@
 Overview / Panoramica
 =====================
 
-|en| Financial Reports - Webkit
--------------------------------
+|en| 
 
-This module adds or replaces the following standard OpenERP financial reports:
- - General ledger
- - Trial Balance (simple or comparative view)
- - Partner ledger
- - Partner balance
- - Open invoices report
- - Aged Partner Balance
+|it| N/D
+Avaiable Addons / Moduli disponibili
+------------------------------------
 
-Main improvements per report:
------------------------------
-
-The General ledger: details of all entries posted in your books sorted by
-account.
-
-* Filter by account is available in the wizard (no need to go to the
-  Chart of Accounts to do this anymore) or by View account (the report
-  will display all regular children accounts) i.e. you can select all
-  P&L accounts.
-* The report only prints accounts with moves OR with a non
-  null balance. No more endless report with empty accounts (field:
-  display account is hidden)
-* initial balance computation on the fly if no open entry posted
-* Thanks to a new checkbox in the account form, you will have the
-  possibility to centralize any account you like.  This means you do
-  not want to see all entries posted under the account ‘VAT on sales’;
-  you will only see aggregated amounts by periods.
-* Counterpart account is displayed for each transaction (3 accounts max.)
-  to ease searching.
-* Better ergonomy on the wizard: important information is displayed in
-  the top part, filters are in the middle, and options are in the
-  bottom or on a separate tab. There is more specific filtering on
-  separate tabs. No more unique wizard layout for all financial
-  reports (we have removed the journal tab for the GL report)
-* improved report style
-
-The partner ledger: details of entries relative to payable &
-receivable accounts posted in your books sorted by account and
-partner.
-
-* Filter by partner now available
-* Now you can see Accounts then Partner with subtotals for each
-  account allowing you to check you data with trial balance and
-  partner balance for instance. Accounts are ordered in the same way as
-  in the Chart of account
-* Period have been added (date only is not filled in since date can be
-  outside period)
-* Reconciliation code added
-* Subtotal by account
-* Alphabetical sorting (same as in partner balance)
-
-Open invoice report : other version of the partner ledger showing
-unreconciled / partially reconciled entries.
-
-* Possibility to print unreconciled transactions only at any date in
-  the past (thanks to the new field: `last_rec_date` which computes
-  the last move line reconciliation date). No more pain to get open
-  invoices at the last closing date.
-* no initial balance computed because the report shows open invoices
-  from previous years.
-
-The Trial balance: list of accounts with balances
-
-* You can either see the columns: initial balance, debit, credit,
-  end balance or compare balances over 4 periods of your choice
-* You can select the "opening" filter to get the opening trial balance
-  only
-* If you create an extra virtual chart (using consolidated account) of
-  accounts for your P&L and your balance sheet, you can print your
-  statutory accounts (with comparison over years for instance)
-* If you compare 2 periods, you will get the differences in values and
-  in percent
-
-The Partner balance: list of account with balances
-
-* Subtotal by account and partner
-* Alphabetical sorting (same as in partner balance)
++-------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| Name / Nome                         | Version    | OCA Ver.   | Description / Descrizione                                                        |
++-------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_chart_report                | 8.0.1.0.0  | |same|     | Print chart of accounts                                                          |
++-------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_export_csv                  | 8.0.1.1.0  | |same|     | Account Export CSV                                                               |
++-------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_financial_report            | |halt|     | |halt|     | Common financial reports                                                         |
++-------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_financial_report_horizontal | 8.0.0.3.0  | |same|     | Accounting Financial Reports Horizontal                                          |
++-------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_financial_report_webkit     | 8.0.1.2.1  | |same|     | Financial Reports - Webkit                                                       |
++-------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_financial_report_webkit_xls | 8.0.1.0.0  | |same|     | Add XLS export to accounting reports                                             |
++-------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_journal_report_xls          | 8.0.0.2.0  | |same|     | Financial Journal reports                                                        |
++-------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_move_line_report_xls        | 8.0.0.6.0  | |same|     | Journal Items Excel export                                                       |
++-------------------------------------+------------+------------+----------------------------------------------------------------------------------+
+| account_tax_report_no_zeroes        | 8.0.1.0.0  | |same|     | Account tax report without zeroes                                                |
++-------------------------------------+------------+------------+----------------------------------------------------------------------------------+
 
 
-Aged Partner Balance: Summary of aged open amount per partner
-
-This report is an accounting tool helping in various tasks.
-You can credit control or partner balance provisions computation for instance.
-
-The aged balance report allows you to print balances per partner
-like the trial balance but add an extra information :
-
-* It will split balances into due amounts
-  (due date not reached à the end date of the report) and overdue amounts
-  Overdue data are also split by period.
-* For each partner following columns will be displayed:
-
-  * Total balance (all figures must match with same date partner balance
-    report).
-    This column equals the sum of all following columns)
-
-   * Due
-   * Overdue <= 30 days
-   * Overdue <= 60 days
-   * Overdue <= 90 days
-   * Overdue <= 120 days
-   * Older
-
-Hypothesis / Contraints of aged partner balance
-
-* Overdues columns will be by default  be based on 30 days range fix number of
-  days. This can be changed by changes the RANGES constraint
-* All data will be displayed in company currency
-* When partial payments, the payment must appear in the same colums than the
-  invoice (Except if multiple payment terms)
-* Data granularity: partner (will not display figures at invoices level)
-* The report aggregate data per account with sub-totals
-* Initial balance must be calculated the same way that
-  the partner balance / Ignoring the opening entry
-  in special period (idem open invoice report)
-* Only accounts with internal type payable or receivable are considered
-  (idem open invoice report)
-* If maturity date is null then use move line date
-
-
-|
-
-|it| Rendiconti di stampa contabili
------------------------------------
-
-Aggiunge o modifica le seguenti stampe:
-
- - Libro mastro
- - Bilancio di verifica
- - Mastro partner
- - Bilancio partner
- - Partite aperte
- - Scaduto
-
-
-|
 
 OCA comparation / Confronto con OCA
 -----------------------------------
@@ -166,8 +53,6 @@ OCA comparation / Confronto con OCA
 +-----------------------------------------------------------------+-------------------+----------------+--------------------------------+
 
 
-|
-|
 
 Getting started / Come iniziare
 ===============================
@@ -175,7 +60,13 @@ Getting started / Come iniziare
 |Try Me|
 
 
-|
+Prerequisites / Prerequisiti
+----------------------------
+
+
+* python 2.7+ (best 2.7.5+)
+* postgresql 9.2+ (best 9.5)
+
 
 Installation / Installazione
 ----------------------------
@@ -215,13 +106,7 @@ Installation / Installazione
     odoo_install_repository account-financial-reporting -b 8.0 -O zero -o $HOME/8.0
     vem create $HOME/8.0/venv_odoo -O 8.0 -a "*" -DI -o $HOME/8.0
 
-From UI: go to:
 
-* |menu| Setting > Modules > Update Modules List
-* |menu| Setting > Local Modules |right_do| Select **account_financial_report_webkit** > Install
-
-
-|
 
 Upgrade / Aggiornamento
 -----------------------
@@ -247,22 +132,15 @@ Upgrade / Aggiornamento
     # Adjust following statements as per your system
     sudo systemctl restart odoo
 
-From UI: go to:
-
-* |menu| Setting > Modules > Update Modules List
-* |menu| Setting > Local Modules |right_do| Select **account_financial_report_webkit** > Update
-
-|
 
 Support / Supporto
 ------------------
 
 
-|Zeroincombenze| This module is maintained by the `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
+|Zeroincombenze| This project is mainly maintained by the `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
 
-|
-|
+
 
 Get involved / Ci mettiamo in gioco
 ===================================
@@ -273,47 +151,22 @@ and/or submit pull requests on `GitHub Issues
 
 In case of trouble, please check there if your issue has already been reported.
 
-|
-
-Known issues / Roadmap
-----------------------
-
-In order to run properly this module makes sure you have installed the
-library `wkhtmltopdf` for the pdf rendering (the library path must be
-set in a System Parameter `webkit_path`).
-
-Initial balances in these reports are based either on opening entry
-posted in the opening period or computed on the fly. So make sure
-that your past accounting opening entries are in an opening period.
-Initials balances are not computed when using the Date filter (since a
-date can be outside its logical period and the initial balance could
-be different when computed by data or by initial balance for the
-period). The opening period is assumed to be the Jan. 1st of the year
-with an opening flag and the first period of the year must start also
-on Jan 1st.
-
-Totals for amounts in currencies are effective if the partner belongs to
-an account with a secondary currency.
-
-HTML headers and footers are deactivated for these reports because of
-an issue in wkhtmltopdf
-(http://code.google.com/p/wkhtmltopdf/issues/detail?id=656) Instead,
-the header and footer are created as text with arguments passed to
-wkhtmltopdf. The texts are defined inside the report classes.
-
-
 Proposals for enhancement
 -------------------------
 
 
-|en| If you have a proposal to change this module, you may want to send an email to <cc@shs-av.com> for initial feedback.
+|en| If you have a proposal to change on oh these modules, you may want to send an email to <cc@shs-av.com> for initial feedback.
 An Enhancement Proposal may be submitted if your idea gains ground.
 
-|it| Se hai proposte per migliorare questo modulo, puoi inviare una mail a <cc@shs-av.com> per un iniziale contatto.
+|it| Se hai proposte per migliorare uno dei moduli, puoi inviare una mail a <cc@shs-av.com> per un iniziale contatto.
 
 
-|
-|
+History / Cronologia
+--------------------
+
+
+
+
 
 Credits / Didascalie
 ====================
@@ -323,37 +176,6 @@ Copyright
 
 Odoo is a trademark of `Odoo S.A. <https://www.odoo.com/>`__ (formerly OpenERP)
 
-
-
-|
-
-Authors / Autori
-----------------
-
-* `Savoir-faire <https://savoirfairelinux.com/>`__
-* `Noviat nv/sa <www.noviat.com>`__
-* `Tecnativa S. L. <https://www.tecnativa.com/>`__
-* `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
-
-
-Contributors / Collaboratori
-----------------------------
-
-* Nicolas Bessi
-* Guewen Baconnier
-* David Dufresne <david.dufresne@savoirfairelinux.com>
-* Luc De Meyer <luc.demeyer@noviat.com>
-* Jairo Llopis <jairo.llopis@tecnativa.com>
-* Antonio M. Vigliotti <info@shs-av.com>
-
-
-Maintainer / Manutenzione
--------------------------
-
-
-
-
-|
 
 ----------------
 
@@ -374,11 +196,10 @@ La distribuzione `Zeroincombenze® <https://wiki.zeroincombenze.org/en/Odoo>`__ 
 
 |
 
-This module is part of account-financial-reporting project.
 
 Last Update / Ultimo aggiornamento: 2021-11-24
 
-.. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-black.png
+.. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
     :target: https://odoo-community.org/page/development-status
     :alt: 
 .. |Build Status| image:: https://travis-ci.org/zeroincombenze/account-financial-reporting.svg?branch=8.0
@@ -436,4 +257,5 @@ Last Update / Ultimo aggiornamento: 2021-11-24
    :target: https://github.com/zeroincombenze/grymb/blob/master/certificates/ade/scope/fatturapa.md
 .. |chat_with_us| image:: https://www.shs-av.com/wp-content/chat_with_us.gif
    :target: https://t.me/Assitenza_clienti_powERP
+
 
