@@ -1,64 +1,61 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * account_financial_report_qweb
+# 	* account_financial_report_qweb
 #
-# Translators:
-# Pedro Castro Silva <inactive+pcs.sossia@transifex.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-23 15:26+0000\n"
-"PO-Revision-Date: 2018-12-16 18:58+0000\n"
-"Last-Translator: Pedro Castro Silva <pedrocs@exo.pt>\n"
-"Language-Team: Portuguese (https://www.transifex.com/oca/teams/23907/pt/)\n"
-"Language: pt\n"
+"PO-Revision-Date: 2019-07-23 13:43+0000\n"
+"Last-Translator: Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>\n"
+"Language-Team: none\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_lines_header
 msgid "&gt; 120 d."
-msgstr ""
+msgstr "&gt; 120 pv."
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_lines_header
 msgid "1 - 30 d."
-msgstr ""
+msgstr "1 - 30 pv."
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_lines_header
 msgid "31 - 60 d."
-msgstr ""
+msgstr "31 - 60 pv."
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_lines_header
 msgid "61 - 90 d."
-msgstr ""
+msgstr "61 - 90 pv."
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_lines_header
 msgid "91 - 120 d."
-msgstr ""
+msgstr "91 - 120 pv."
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_all_taxes
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal_taxes
 msgid "<b>Taxes summary</b>"
-msgstr "<b>Resumo de impostos</b>"
+msgstr "<b>Verojen yhteenveto</b>"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_buttons
 msgid "<span class=\"fa fa-download\"/> Export"
-msgstr "<span class=\"fa fa-download\"/> Exportar"
+msgstr "<span class=\"fa fa-download\"/> View"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_buttons
 msgid "<span class=\"fa fa-print\"/> Print"
-msgstr "<span class=\"fa fa-print\"/> Imprimir"
+msgstr "<span class=\"fa fa-print\"/> Tulosta"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:73
@@ -78,20 +75,20 @@ msgstr "<span class=\"fa fa-print\"/> Imprimir"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_lines_header
 #, python-format
 msgid "Account"
-msgstr "Conta"
+msgstr "Tili"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:45
 #, python-format
 msgid "Account Name"
-msgstr "Nome da Conta"
+msgstr "Tilin nimi"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/trial_balance_xlsx.py:114
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_filters
 #, python-format
 msgid "Account at 0 filter"
-msgstr "Filtro de conta com saldo 0"
+msgstr "Tili 0 suotimella"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:95
@@ -100,17 +97,17 @@ msgstr "Filtro de conta com saldo 0"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_open_items_qweb_filters
 #, python-format
 msgid "Account balance at 0 filter"
-msgstr "Filtro de conta com saldo 0"
+msgstr "Tilin saldo 0 suotimella"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_line_account_code
 msgid "Account code"
-msgstr "Código da conta"
+msgstr "Tilin koodi"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_account_group_id
 msgid "Account group id"
-msgstr "Id de grupo de conta"
+msgstr "Tiliryhmän id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_account_id
@@ -119,7 +116,7 @@ msgstr "Id de grupo de conta"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_account_account_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_account_id
 msgid "Account id"
-msgstr "Id de Conta"
+msgstr "Tilin id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_ids
@@ -127,47 +124,47 @@ msgstr "Id de Conta"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_account_ids
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_ids
 msgid "Account ids"
-msgstr "Ids de Contas"
+msgstr "Tilin id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_line_account_type
 msgid "Account type"
-msgstr "Tipo de conta"
+msgstr "Tilin tyyppi"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_child_account_ids
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_compute_account_ids
 msgid "Accounts"
-msgstr "Contas"
+msgstr "Tilit"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_general_ledger_report_wizard_centralize
 msgid "Activate centralization"
-msgstr "Ativar centralização"
+msgstr "Aktivoi keskittäminen"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_line_age_120_days
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_move_line_age_120_days
 msgid "Age 120 days"
-msgstr "Antig. 120 dias"
+msgstr "Ikä 120 päivää"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_line_age_30_days
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_move_line_age_30_days
 msgid "Age 30 days"
-msgstr "Antig. 30 dias"
+msgstr "Ikä 30 päivää"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_line_age_60_days
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_move_line_age_60_days
 msgid "Age 60 days"
-msgstr "Antig. 60 dias"
+msgstr "Ikä 60 päivää"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_line_age_90_days
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_move_line_age_90_days
 msgid "Age 90 days"
-msgstr "Antig. 90 dias"
+msgstr "Ikä 90 päivää"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_move_lines
@@ -175,15 +172,15 @@ msgid ""
 "Age ≤ 120\n"
 "                        d."
 msgstr ""
-"Antig. ≤ 120\n"
-"                        d."
+"Ikä ≤ 120\n"
+"                        pv."
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:55
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:111
 #, python-format
 msgid "Age ≤ 120 d."
-msgstr "Antig. ≤ 120 d."
+msgstr "Ikä ≤ 120 pv."
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_move_lines
@@ -191,15 +188,15 @@ msgid ""
 "Age ≤ 30\n"
 "                        d."
 msgstr ""
-"Antig. ≤ 30\n"
-"                        d."
+"Ikä ≤ 30\n"
+"                        pv."
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:37
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:90
 #, python-format
 msgid "Age ≤ 30 d."
-msgstr "Antig. ≤ 30 d."
+msgstr "Ikä ≤ 30 pv."
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_move_lines
@@ -207,15 +204,15 @@ msgid ""
 "Age ≤ 60\n"
 "                        d."
 msgstr ""
-"Antig. ≤ 60\n"
-"                        d."
+"Ikä ≤ 60\n"
+"                        pv."
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:43
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:97
 #, python-format
 msgid "Age ≤ 60 d."
-msgstr "Antig. ≤ 60 d."
+msgstr "Ikä ≤ 60 pv."
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_move_lines
@@ -223,15 +220,15 @@ msgid ""
 "Age ≤ 90\n"
 "                        d."
 msgstr ""
-"Antig. ≤ 90\n"
-"                        d."
+"Ikä ≤ 90\n"
+"                        pv."
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:49
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:104
 #, python-format
 msgid "Age ≤ 90 d."
-msgstr "Antig. ≤ 90 d."
+msgstr "Ikä ≤ 90 pv."
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:19
@@ -242,29 +239,28 @@ msgstr "Antig. ≤ 90 d."
 #: model:ir.ui.menu,name:account_financial_report_qweb.menu_aged_partner_balance_wizard
 #, python-format
 msgid "Aged Partner Balance"
-msgstr "Antiguidade de Saldo de Parceiros"
+msgstr "Kumppanien tase"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_base
-#, fuzzy
 msgid "Aged Partner Balance -"
-msgstr "Antiguidade de Saldo de Parceiros"
+msgstr "Kumppanien tase -"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_aged_partner_balance_wizard
 msgid "Aged Partner Balance Wizard"
-msgstr "Assistente ao relatório de antiguidade de saldo do parceiros"
+msgstr "Kumppanien taseen ohjattu toiminto"
 
 #. module: account_financial_report_qweb
 #: model:ir.actions.report.xml,name:account_financial_report_qweb.action_report_aged_partner_balance_xlsx
 msgid "Aged Partner Balance XLSX"
-msgstr "Antiguidade de Saldo do Parceiro XLSX"
+msgstr "Kumppanien tase XLSX"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/wizard/journal_report_wizard.py:62
 #, python-format
 msgid "All"
-msgstr "Todos"
+msgstr "Kaikki"
 
 #. module: account_financial_report_qweb
 #: selection:aged.partner.balance.wizard,target_move:0
@@ -272,7 +268,7 @@ msgstr "Todos"
 #: selection:open.items.report.wizard,target_move:0
 #: selection:trial.balance.report.wizard,target_move:0
 msgid "All Entries"
-msgstr "Todos os Lançamentos"
+msgstr "Kaikki viennit"
 
 #. module: account_financial_report_qweb
 #: selection:aged.partner.balance.wizard,target_move:0
@@ -280,7 +276,7 @@ msgstr "Todos os Lançamentos"
 #: selection:open.items.report.wizard,target_move:0
 #: selection:trial.balance.report.wizard,target_move:0
 msgid "All Posted Entries"
-msgstr "Todos os Lançamentos Publicados"
+msgstr "Kaikki kirjatut viennit"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:132
@@ -293,7 +289,7 @@ msgstr "Todos os Lançamentos Publicados"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_filters
 #, python-format
 msgid "All entries"
-msgstr "Todos os lançamentos"
+msgstr "Kaikki viennit"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:131
@@ -306,48 +302,48 @@ msgstr "Todos os lançamentos"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_filters
 #, python-format
 msgid "All posted entries"
-msgstr "Todos os lançamentos publicados"
+msgstr "Kaikki kirjatut viennit"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:83
 #, python-format
 msgid "Amount Currency"
-msgstr "Valor na Moeda"
+msgstr "Määrä valuutassa"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:72
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_general_ledger_lines
 #, python-format
 msgid "Amount cur."
-msgstr "Valor mda."
+msgstr "Määrä val."
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_move_line_amount_currency
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_line_amount_currency
 msgid "Amount currency"
-msgstr "Valor na moeda"
+msgstr "Määrä valuutassa"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_line_amount_residual
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_move_line_amount_residual
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_move_line_amount_residual
 msgid "Amount residual"
-msgstr "Valor em aberto"
+msgstr "Jäännöksen määrä"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_move_line_amount_residual_currency
 msgid "Amount residual currency"
-msgstr "Valor em aberto na moeda"
+msgstr "Jäännöksen määrä valuutassa"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_move_line_amount_total_due
 msgid "Amount total due"
-msgstr "Valor total em dívida"
+msgstr "Erääntynyt kokonaismäärä"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_move_line_amount_total_due_currency
 msgid "Amount total due currency"
-msgstr "Valor total em dívida na moeda"
+msgstr "Erääntynyt kokonaismäärä valuutassa"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_all_taxes
@@ -359,43 +355,43 @@ msgstr "Saldo"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_all_taxes
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal_taxes
 msgid "Base Amount"
-msgstr "Valor Base"
+msgstr "Perusmäärä"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:125
 #, python-format
 msgid "Base Balance"
-msgstr "Saldo Base"
+msgstr "Perussaldo"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:119
 #, python-format
 msgid "Base Credit"
-msgstr "Crédito Base"
+msgstr "Kredit peruste"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:113
 #, python-format
 msgid "Base Debit"
-msgstr "Débito Base"
+msgstr "Debet peruste"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_tax_line_base_balance
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_tax_line_base_balance
 msgid "Base balance"
-msgstr "Saldo base"
+msgstr "Perussaldo"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_tax_line_base_credit
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_tax_line_base_credit
 msgid "Base credit"
-msgstr "Crédito base"
+msgstr "Kredit peruste"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_tax_line_base_debit
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_tax_line_base_debit
 msgid "Base debit"
-msgstr "Débito base"
+msgstr "Debet peruste"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.aged_partner_balance_wizard
@@ -404,36 +400,36 @@ msgstr "Débito base"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.open_items_wizard
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.trial_balance_wizard
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Peru"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_centralize
 msgid "Centralize"
-msgstr "Centralizar"
+msgstr "Keskitä"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:99
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_general_ledger_filters
 #, python-format
 msgid "Centralize filter"
-msgstr "Filtro de centralização"
+msgstr "Keskitä-suodin"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_account_account_centralized
 msgid "Centralized"
-msgstr "Centralizado"
+msgstr "Keskitetty"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger.py:1439
 #, python-format
 msgid "Centralized Entries"
-msgstr "Lançamentos Centralizados"
+msgstr "Keskitetyt viennit"
 
 #. module: account_financial_report_qweb
 #: selection:report_trial_balance_qweb,hierarchy_on:0
 #: selection:trial.balance.report.wizard,hierarchy_on:0
 msgid "Child Accounts"
-msgstr "Contas Descendentes"
+msgstr "Alatilit"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/trial_balance_xlsx.py:25
@@ -445,7 +441,7 @@ msgstr "Contas Descendentes"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_lines_header
 #, python-format
 msgid "Code"
-msgstr "Código"
+msgstr "Koodi"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:171
@@ -456,12 +452,12 @@ msgstr "Código"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_company_id
 #, python-format
 msgid "Company"
-msgstr "Empresa"
+msgstr "Yritys"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_line_company_currency_id
 msgid "Company currency id"
-msgstr "Id da moeda da empresa"
+msgstr "Yrityksen valuutan id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_company_id
@@ -473,13 +469,13 @@ msgstr "Id da moeda da empresa"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_company_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_company_id
 msgid "Company id"
-msgstr "Id da empresa"
+msgstr "Yrityksen id"
 
 #. module: account_financial_report_qweb
 #: selection:report_trial_balance_qweb,hierarchy_on:0
 #: selection:trial.balance.report.wizard,hierarchy_on:0
 msgid "Computed Accounts"
-msgstr "Contas Calculadas"
+msgstr "Lasketut tilit"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,help:account_financial_report_qweb.field_report_trial_balance_qweb_hierarchy_on
@@ -494,14 +490,12 @@ msgid ""
 "grouping.\n"
 "        "
 msgstr ""
-"Contas Calculadas: Usar quando o grupo de contas tem códigos\n"
-"        que representam prefixos das contas efetivas.\n"
+"Lasketut tilit: käytä kun tiliryhmällä on koodeja,\n"
+"        jotka kuvaavat varsinaisten tilien etuliitteitä.\n"
 "\n"
-"        Contas Descendentes: Usar quando os seus grupos de contas são "
-"hierárquicos.\n"
+"        Alatilit: käytä kun tiliryhmät ovat hierarkisia.\n"
 "\n"
-"        Sem hierarquia: Usar para apresentar apenas as contas sem qualquer "
-"agrupamento.\n"
+"        Ei hierarkiaa: käytä näyttämään vain tilit ilman ryhmittelyä.\n"
 "        "
 
 #. module: account_financial_report_qweb
@@ -509,14 +503,16 @@ msgstr ""
 msgid ""
 "Cost\n"
 "                            center"
-msgstr "Centro de custo"
+msgstr ""
+"Kustannus-\n"
+"                            paikka"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:34
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_move_line_cost_center
 #, python-format
 msgid "Cost center"
-msgstr "Centro de custo"
+msgstr "Kustannuspaikka"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_create_uid
@@ -547,7 +543,7 @@ msgstr "Centro de custo"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_partner_create_uid
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_create_uid
 msgid "Created by"
-msgstr "Criado por"
+msgstr "Luonut"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_create_date
@@ -578,7 +574,7 @@ msgstr "Criado por"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_partner_create_date
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_create_date
 msgid "Created on"
-msgstr "Criado em"
+msgstr "Luotu"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:51
@@ -597,54 +593,54 @@ msgstr "Criado em"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_lines_header
 #, python-format
 msgid "Credit"
-msgstr "Crédito"
+msgstr "Kredit"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_cumul_age_120_days
 msgid "Cumul age 120 days"
-msgstr "Antig. acum. 120 dias"
+msgstr "Kumulat. ikä 120 päivää"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_cumul_age_30_days
 msgid "Cumul age 30 days"
-msgstr "Ant. acum. 30 dias"
+msgstr "Kumulat. ikä 30 päivää"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_cumul_age_60_days
 msgid "Cumul age 60 days"
-msgstr "Antig. acum. 60 dias"
+msgstr "Kumulat. ikä 60 päivää"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_cumul_age_90_days
 msgid "Cumul age 90 days"
-msgstr "Antig. acum. 90 dias"
+msgstr "Kumulat. ikä 90 päivää"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_cumul_amount_residual
 msgid "Cumul amount residual"
-msgstr "Valor em aberto acumulado"
+msgstr "Kumulat. ylijäämän määrä"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_move_line_cumul_balance
 msgid "Cumul balance"
-msgstr "Saldo acumulado"
+msgstr "Kumulat. saldo"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_cumul_current
 msgid "Cumul current"
-msgstr "Acumulado corrente"
+msgstr "Kumulat. tämänhetkinen"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_cumul_older
 msgid "Cumul older"
-msgstr "Acumulado antigo"
+msgstr "Kumlat. vanhemmat"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:58
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_general_ledger_lines
 #, python-format
 msgid "Cumul. Bal."
-msgstr "Saldo Acum."
+msgstr "Kumulat. saldo."
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:67
@@ -656,28 +652,28 @@ msgstr "Saldo Acum."
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_lines_header
 #, python-format
 msgid "Cur."
-msgstr "Moeda"
+msgstr "Nyk."
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/open_items_xlsx.py:46
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_open_items_qweb_lines
 #, python-format
 msgid "Cur. Original"
-msgstr "Moeda Original"
+msgstr "Nyk. alkuperäinen"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/open_items_xlsx.py:51
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_open_items_qweb_lines
 #, python-format
 msgid "Cur. Residual"
-msgstr "Moeda do Valor em Aberto"
+msgstr "Nyk. ylijäämä"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:89
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal_table_header
 #, python-format
 msgid "Currency"
-msgstr "Moeda"
+msgstr "Valuutta"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_account_currency_id
@@ -691,12 +687,12 @@ msgstr "Moeda"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_currency_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_partner_currency_id
 msgid "Currency id"
-msgstr "Id da moeda"
+msgstr "Valuutan id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_line_currency_name
 msgid "Currency name"
-msgstr "Nome da moeda"
+msgstr "Valuutan nimi"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:31
@@ -706,7 +702,7 @@ msgstr "Nome da moeda"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_move_lines
 #, python-format
 msgid "Current"
-msgstr "Corrente"
+msgstr "Tämänhetkinen"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:70
@@ -724,7 +720,7 @@ msgstr "Corrente"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_open_items_qweb_lines
 #, python-format
 msgid "Date"
-msgstr "Data"
+msgstr "Päivä"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_date_at
@@ -732,7 +728,7 @@ msgstr "Data"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_date_at
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_date_at
 msgid "Date at"
-msgstr "Data em"
+msgstr "Päivä hetkellä"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:129
@@ -741,13 +737,13 @@ msgstr "Data em"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_open_items_qweb_filters
 #, python-format
 msgid "Date at filter"
-msgstr "Data no filtro"
+msgstr "Päivä hetkellä suodin"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_move_line_date_due
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_move_line_date_due
 msgid "Date due"
-msgstr "Data de Vencimento"
+msgstr "Eräpäivä"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_general_ledger_report_wizard_date_from
@@ -756,14 +752,14 @@ msgstr "Data de Vencimento"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_date_from
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_date_from
 msgid "Date from"
-msgstr "Data de"
+msgstr "Alkupäivä"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_general_ledger_report_wizard_date_range_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_journal_report_wizard_date_range_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_date_range_id
 msgid "Date range"
-msgstr "Período"
+msgstr "Ajanjakso"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:86
@@ -773,7 +769,7 @@ msgstr "Período"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_filters
 #, python-format
 msgid "Date range filter"
-msgstr "Filtro de período"
+msgstr "Ajanjakson suodin"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_general_ledger_report_wizard_date_to
@@ -782,7 +778,7 @@ msgstr "Filtro de período"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_date_to
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_date_to
 msgid "Date to"
-msgstr "Data até"
+msgstr "Päättymispäivä"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:44
@@ -801,7 +797,7 @@ msgstr "Data até"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_lines_header
 #, python-format
 msgid "Debit"
-msgstr "Débito"
+msgstr "Debet"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:108
@@ -809,7 +805,7 @@ msgstr "Débito"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal_taxes
 #, python-format
 msgid "Description"
-msgstr "Descrição"
+msgstr "Kuvaus"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_display_name
@@ -841,7 +837,7 @@ msgstr "Descrição"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_partner_display_name
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_display_name
 msgid "Display Name"
-msgstr "Nome a Exibir"
+msgstr "Näyttönimi"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,help:account_financial_report_qweb.field_general_ledger_report_wizard_foreign_currency
@@ -852,15 +848,14 @@ msgid ""
 "setup through chart of accounts will display initial and final balance in "
 "that currency."
 msgstr ""
-"Exibir moeda estrangeira para linhas de movimento, a menos que a moeda da "
-"conta não esteja configurada no plano de contas exibirá o saldo inicial e "
-"final nessa moeda."
+"Näytä vieras valuutta kirjausriveille. Jos tilin valuutta on asetettu "
+"tilikartassa, näytetään alku- ja loppusaldot siinä valuutassa."
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_hide_parent_hierarchy_level
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_hide_parent_hierarchy_level
 msgid "Do not display parent levels"
-msgstr ""
+msgstr "Älä näytä ylätasoja"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_move_lines
@@ -868,26 +863,30 @@ msgstr ""
 msgid ""
 "Due\n"
 "                        date"
-msgstr "Data de vencimento"
+msgstr ""
+"Erä-\n"
+"                        päivä"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:76
 #: code:addons/account_financial_report_qweb/report/open_items_xlsx.py:30
 #, python-format
 msgid "Due date"
-msgstr "Data de vencimento"
+msgstr "Eräpäivä"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_journal_report_wizard_date_to
 msgid "End date"
-msgstr "Data final"
+msgstr "Päättymispäivä"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_open_items_qweb_ending_cumul
 msgid ""
 "Ending\n"
 "                        balance"
-msgstr "Saldo final"
+msgstr ""
+"Loppu-\n"
+"                        saldo"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:190
@@ -900,18 +899,18 @@ msgstr "Saldo final"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_lines_header
 #, python-format
 msgid "Ending balance"
-msgstr "Saldo final"
+msgstr "Loppusaldo"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_lines_header
 msgid "Ending blance cur."
-msgstr "Saldo final mda."
+msgstr "Loppusaldo nyk."
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:183
 #, python-format
 msgid "Entries sorted by"
-msgstr "Lançamentos ordenados por"
+msgstr "Vientien järjestys"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:71
@@ -928,13 +927,13 @@ msgstr "Lançamentos ordenados por"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_open_items_qweb_lines
 #, python-format
 msgid "Entry"
-msgstr "Lançamento"
+msgstr "Vienti"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/wizard/journal_report_wizard.py:70
 #, python-format
 msgid "Entry number"
-msgstr "Número de lançamento"
+msgstr "Viennin numero"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.aged_partner_balance_wizard
@@ -943,7 +942,7 @@ msgstr "Número de lançamento"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.open_items_wizard
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.trial_balance_wizard
 msgid "Export PDF"
-msgstr "Exportar PDF"
+msgstr "Vie PDF"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.aged_partner_balance_wizard
@@ -952,7 +951,7 @@ msgstr "Exportar PDF"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.open_items_wizard
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.trial_balance_wizard
 msgid "Export XLSX"
-msgstr "Exportar XLSX"
+msgstr "Vie XLSX"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_filter_account_ids
@@ -960,7 +959,7 @@ msgstr "Exportar XLSX"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_filter_account_ids
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_filter_account_ids
 msgid "Filter account ids"
-msgstr "Filtro de ids de contas"
+msgstr "Suodata tilin id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_account_ids
@@ -970,40 +969,40 @@ msgstr "Filtro de ids de contas"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_account_ids
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.general_ledger_wizard
 msgid "Filter accounts"
-msgstr "Filtro de contas"
+msgstr "Suodata tilit"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_filter_analytic_tag_ids
 msgid "Filter analytic tag ids"
-msgstr "Filtro de ids de etiq. analíticas"
+msgstr "Suodata analyyttisten tunnisteiden id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.general_ledger_wizard
 msgid "Filter analytic tags"
-msgstr "Filtro de etiq. analíticas"
+msgstr "Suodata analyyttisiä tunnisteita"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_filter_cost_center_ids
 msgid "Filter cost center ids"
-msgstr "Filtro de ids de centros de custo"
+msgstr "Suodata kustannuspaikkojen id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_general_ledger_report_wizard_cost_center_ids
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.general_ledger_wizard
 msgid "Filter cost centers"
-msgstr "Filtro de centros de custo"
+msgstr "Suodata kustannuspaikat"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_filter_journal_ids
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_filter_journal_ids
 msgid "Filter journal ids"
-msgstr "Filtro de ids de diários"
+msgstr "Suodata päiväkirjojen id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_general_ledger_report_wizard_journal_ids
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_journal_ids
 msgid "Filter journals"
-msgstr "Filtro de diários"
+msgstr "Suodata päiväkirjat"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_filter_partner_ids
@@ -1011,7 +1010,7 @@ msgstr "Filtro de diários"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_filter_partner_ids
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_filter_partner_ids
 msgid "Filter partner ids"
-msgstr "Filtro de ids de parceiros"
+msgstr "Suodata kumppanien id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_partner_ids
@@ -1020,31 +1019,31 @@ msgstr "Filtro de ids de parceiros"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_partner_ids
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.general_ledger_wizard
 msgid "Filter partners"
-msgstr "Filtro de parceiros"
+msgstr "Suodata kumppaneita"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_account_final_amount_residual
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_partner_final_amount_residual
 msgid "Final amount residual"
-msgstr "Valor final em aberto"
+msgstr "Lopullinen jäännöksen määrä"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_account_final_amount_residual_currency
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_partner_final_amount_residual_currency
 msgid "Final amount residual currency"
-msgstr "Valor final em aberto na moeda"
+msgstr "Lopullinen jäännöksen määrä valuutassa"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_account_final_amount_total_due
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_partner_final_amount_total_due
 msgid "Final amount total due"
-msgstr "Valor total em dívida vencida"
+msgstr "Lopullinen erääntynyt kokonaismäärä"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_account_final_amount_total_due_currency
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_partner_final_amount_total_due_currency
 msgid "Final amount total due currency"
-msgstr "Valor total em dívida na moeda"
+msgstr "Lopullinen erääntynyt kokonaismäärä valuutassa"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_account_final_balance
@@ -1052,7 +1051,7 @@ msgstr "Valor total em dívida na moeda"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_final_balance
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_partner_final_balance
 msgid "Final balance"
-msgstr "Saldo final"
+msgstr "Lopullinen saldo"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_account_final_balance_foreign_currency
@@ -1060,19 +1059,19 @@ msgstr "Saldo final"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_final_balance_foreign_currency
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_partner_final_balance_foreign_currency
 msgid "Final balance foreign currency"
-msgstr "Saldo final em moeda estrangeira"
+msgstr "Lopullinen saldo vieraassa valuutassa"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_account_final_credit
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_partner_final_credit
 msgid "Final credit"
-msgstr "Crédito final"
+msgstr "Lopullinen kredit"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_account_final_debit
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_partner_final_debit
 msgid "Final debit"
-msgstr "Débito final"
+msgstr "Lopullinen debet"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_journal_report_wizard_foreign_currency
@@ -1081,13 +1080,13 @@ msgstr "Débito final"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_foreign_currency
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_foreign_currency
 msgid "Foreign currency"
-msgstr "Moeda estrangeira"
+msgstr "Vieras valuutta"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_general_ledger_filters
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_filters
 msgid "From:"
-msgstr "De:"
+msgstr "Alkaen:"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:87
@@ -1095,7 +1094,7 @@ msgstr "De:"
 #: code:addons/account_financial_report_qweb/report/trial_balance_xlsx.py:110
 #, python-format
 msgid "From: %s To: %s"
-msgstr "De: %s Até: %s"
+msgstr "Alkaen: %s Päättyen: %s"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_general_ledger_report_wizard_fy_start_date
@@ -1103,7 +1102,7 @@ msgstr "De: %s Até: %s"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_fy_start_date
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_fy_start_date
 msgid "Fy start date"
-msgstr "Data de início do ano fiscal"
+msgstr "Tilikauden alkupäivä"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:20
@@ -1115,23 +1114,22 @@ msgstr "Data de início do ano fiscal"
 #: model:ir.ui.menu,name:account_financial_report_qweb.menu_general_ledger_wizard
 #, python-format
 msgid "General Ledger"
-msgstr "Extrato geral das contas"
+msgstr "Pääkirja"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_general_ledger_base
-#, fuzzy
 msgid "General Ledger -"
-msgstr "Extrato geral das contas"
+msgstr "Pääkirja -"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_general_ledger_report_wizard
 msgid "General Ledger Report Wizard"
-msgstr "Assistente ao relatório extrato geral das contas"
+msgstr "Pääkirjaraportin ohjattu toiminto"
 
 #. module: account_financial_report_qweb
 #: model:ir.actions.report.xml,name:account_financial_report_qweb.action_report_general_ledger_xlsx
 msgid "General Ledger XLSX"
-msgstr "Extrato geral das contas XLSX"
+msgstr "Pääkirja XLSX"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.general_ledger_wizard
@@ -1139,23 +1137,23 @@ msgid ""
 "General Ledger can be computed only if selected company have only one "
 "unaffected earnings account."
 msgstr ""
-"O Extrato geral das contas apenas pode ser calculado se a empresa "
-"seleccionada só tiver uma conta de lucros não distribuídos."
+"Pääkirja voidaan laskea vain jos valitulla yrityksellä on tasan yksi tili "
+"kuluvan vuoden tulokselle."
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_general_ledger_id
 msgid "General ledger id"
-msgstr "Id do Extrato geral das contas"
+msgstr "Pääkirjan id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_journal_report_wizard_group_option
 msgid "Group entries by"
-msgstr "Agrupar lançamentos por"
+msgstr "Ryhmittele viennit"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_group_option
 msgid "Group option"
-msgstr "Opções de agrupar por"
+msgstr "Ryhmittelyn valinta"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:96
@@ -1166,42 +1164,42 @@ msgstr "Opções de agrupar por"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_filters
 #, python-format
 msgid "Hide"
-msgstr "Ocultar"
+msgstr "Piilota"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_hide_account_at_0
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_hide_account_at_0
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_hide_account_at_0
 msgid "Hide account at 0"
-msgstr "Ocultar conta com saldo zero"
+msgstr "Piilota tili saldolla 0"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_general_ledger_report_wizard_hide_account_at_0
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_open_items_report_wizard_hide_account_at_0
 msgid "Hide account ending balance at 0"
-msgstr "Ocultar conta com saldo final zero"
+msgstr "Piilota tili loppusaldolla 0"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_hide_account_at_0
 msgid "Hide accounts at 0"
-msgstr "Ocultar conta com saldo zero"
+msgstr "Piilota tilit saldolla 0"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_hide_line
 msgid "Hide line"
-msgstr "Ocultar linha"
+msgstr "Piilota rivi"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_show_hierarchy_level
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_show_hierarchy_level
 msgid "Hierarchy Levels to display"
-msgstr "Níveis Hierárquicos a Apresentar"
+msgstr "Näytettävät hierarkiatasot"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_hierarchy_on
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_hierarchy_on
 msgid "Hierarchy On"
-msgstr "Ativar Hierarquia"
+msgstr "Hierarkia"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_id
@@ -1233,7 +1231,7 @@ msgstr "Ativar Hierarquia"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_partner_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,help:account_financial_report_qweb.field_account_account_centralized
@@ -1241,8 +1239,8 @@ msgid ""
 "If flagged, no details will be displayed in the General Ledger report (the "
 "webkit one only), only centralized amounts per period."
 msgstr ""
-"Se assinalado, nenhuns detalhes serão exibidos no relatório do Balancete "
-"Geral, só valores centralizados por período."
+"Jos merkattu, yksityiskohtia ei näytetä Pääkirjaraportilla (koskee vain "
+"webkit-versiota), vain keskitetyt määrät jaksottain."
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_lines_header
@@ -1250,8 +1248,8 @@ msgid ""
 "Initial\n"
 "                    balance"
 msgstr ""
-"Saldo\n"
-"                    inicial"
+"Alku-\n"
+"                    saldo"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:178
@@ -1266,7 +1264,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_general_ledger_lines
 #, python-format
 msgid "Initial balance"
-msgstr "Saldo inicial"
+msgstr "Alkusaldo"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_account_initial_balance_foreign_currency
@@ -1274,29 +1272,29 @@ msgstr "Saldo inicial"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_initial_balance_foreign_currency
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_partner_initial_balance_foreign_currency
 msgid "Initial balance foreign currency"
-msgstr "Saldo inicial em moeda estrangeira"
+msgstr "Alkusaldo vieraassa valuutassa"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_lines_header
 msgid "Initial blance cur."
-msgstr "Saldo inicial mda."
+msgstr "Alkusaldo val."
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_account_initial_credit
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_partner_initial_credit
 msgid "Initial credit"
-msgstr "Crédito inicial"
+msgstr "Alku kredit"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_account_initial_debit
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_partner_initial_debit
 msgid "Initial debit"
-msgstr "Débito inicial"
+msgstr "Alku debet"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_account_is_partner_account
 msgid "Is partner account"
-msgstr "É conta de parceiro"
+msgstr "Onko kumppanitili"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:72
@@ -1314,46 +1312,44 @@ msgstr "É conta de parceiro"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_open_items_qweb_lines
 #, python-format
 msgid "Journal"
-msgstr "Diário"
+msgstr "Päiväkirja"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_account_move_line
-#, fuzzy
 msgid "Journal Item"
-msgstr "Diário"
+msgstr "Päiväkirjatapahtuma"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:21
 #: model:ir.ui.menu,name:account_financial_report_qweb.journal_report_wizard_menu
 #, python-format
 msgid "Journal Ledger"
-msgstr "Extrato de diário"
+msgstr "Päiväkirja"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_base
-#, fuzzy
 msgid "Journal Ledger -"
-msgstr "Extrato de diário"
+msgstr "Päiväkirja -"
 
 #. module: account_financial_report_qweb
 #: model:ir.actions.act_window,name:account_financial_report_qweb.journal_report_wizard_act_window
 msgid "Journal Ledger Report Wizard"
-msgstr "Assistente ao relatório de extrato de diário"
+msgstr "Päiväkirjaraportin ohjattu toiminto"
 
 #. module: account_financial_report_qweb
 #: model:ir.actions.report.xml,name:account_financial_report_qweb.action_report_journal_xlsx
 msgid "Journal XLSX"
-msgstr "Diário XLSX"
+msgstr "Päiväkirja XLSX"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_journal_id
 msgid "Journal id"
-msgstr "Id Diário"
+msgstr "Päiväkirjan ID"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_ids
 msgid "Journal ids"
-msgstr "Ids Diário"
+msgstr "Päiväkirjan id:t"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:187
@@ -1361,7 +1357,7 @@ msgstr "Ids Diário"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.journal_report_wizard_form_view
 #, python-format
 msgid "Journals"
-msgstr "Diários"
+msgstr "Päiväkirjat"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_move_line_label
@@ -1369,7 +1365,7 @@ msgstr "Diários"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_line_label
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_move_line_label
 msgid "Label"
-msgstr "Rótulo"
+msgstr "Otsikko"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard___last_update
@@ -1401,7 +1397,7 @@ msgstr "Rótulo"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_partner___last_update
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard___last_update
 msgid "Last Modified on"
-msgstr "Última Modificação em"
+msgstr "Viimeksi muokattu"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_write_uid
@@ -1432,7 +1428,7 @@ msgstr "Última Modificação em"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_write_uid
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_write_uid
 msgid "Last Updated by"
-msgstr "Última Atualização por"
+msgstr "Viimeksi päivittänyt"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_write_date
@@ -1463,19 +1459,19 @@ msgstr "Última Atualização por"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_write_date
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_write_date
 msgid "Last Updated on"
-msgstr "Última Atualização em"
+msgstr "Viimeksi päivitetty"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_level
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_filters
 msgid "Level"
-msgstr "Nível"
+msgstr "Taso"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/trial_balance_xlsx.py:119
 #, python-format
 msgid "Level %s"
-msgstr "Nível %s"
+msgstr "Taso %s"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/trial_balance_xlsx.py:118
@@ -1484,22 +1480,23 @@ msgstr "Nível %s"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_filters
 #, python-format
 msgid "Limit hierarchy levels"
-msgstr "Limitar níveis hierárquicos"
+msgstr "Rajoita hierarkiatasoja"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_partner_line_ids
 msgid "Line ids"
-msgstr "Ids de linha"
+msgstr "Rivien id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_move_line_matched_ml_id
+#, fuzzy
 msgid "Matched ml id"
-msgstr ""
+msgstr "Matched ml id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_move_id
 msgid "Move id"
-msgstr "Id do movimento"
+msgstr "Siirron id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_move_line_move_line_id
@@ -1507,7 +1504,7 @@ msgstr "Id do movimento"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_line_move_line_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_move_line_move_line_id
 msgid "Move line id"
-msgstr "Id da linha de movimento"
+msgstr "Siirtorivin id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_partner_move_line_ids
@@ -1515,18 +1512,18 @@ msgstr "Id da linha de movimento"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_partner_move_line_ids
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_partner_move_line_ids
 msgid "Move line ids"
-msgstr "Ids das linhas de movimento"
+msgstr "Siirtorivien id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_journal_report_wizard_move_target
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_target
 msgid "Move target"
-msgstr "Movimentos alvo"
+msgstr "Siirron kohde"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal
 msgid "Moves"
-msgstr "Movimentos"
+msgstr "Siirrot"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:103
@@ -1544,7 +1541,7 @@ msgstr "Movimentos"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal_taxes
 #, python-format
 msgid "Name"
-msgstr "Nome"
+msgstr "Nimi"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:100
@@ -1555,26 +1552,26 @@ msgstr "Nome"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_general_ledger_filters
 #, python-format
 msgid "No"
-msgstr "Não"
+msgstr "Ei"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/wizard/journal_report_wizard.py:78
 #, python-format
 msgid "No group"
-msgstr "Não agrupar"
+msgstr "Ei ryhmää"
 
 #. module: account_financial_report_qweb
 #: selection:report_trial_balance_qweb,hierarchy_on:0
 #: selection:trial.balance.report.wizard,hierarchy_on:0
 msgid "No hierarchy"
-msgstr "Sem hierarquia"
+msgstr "Ei hierarkiaa"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/trial_balance_xlsx.py:120
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_filters
 #, python-format
 msgid "No limit"
-msgstr "Sem limite"
+msgstr "Ei rajoitusta"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger.py:761
@@ -1583,29 +1580,29 @@ msgstr "Sem limite"
 #: code:addons/account_financial_report_qweb/report/open_items.py:545
 #, python-format
 msgid "No partner allocated"
-msgstr "Nenhum parceiro atribuído"
+msgstr "Ei valittua kumppania"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/wizard/journal_report_wizard.py:64
 #, python-format
 msgid "Not Posted"
-msgstr "Não publicado"
+msgstr "Ei kirjattu"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_lines_header
 msgid "Not due"
-msgstr "Não vencido"
+msgstr "Ei erääntynyt"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_general_ledger_report_wizard_not_only_one_unaffected_earnings_account
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_not_only_one_unaffected_earnings_account
 msgid "Not only one unaffected earnings account"
-msgstr "Não existe uma única conta de rendimentos não atribuída"
+msgstr "Ei tasan yhtä kuluvan vuoden tulotiliä"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.menu,name:account_financial_report_qweb.menu_oca_reports
 msgid "OCA accounting reports"
-msgstr "Relatórios de contabilidade OCA"
+msgstr "OCA kirjanpidon raportit"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:61
@@ -1615,7 +1612,7 @@ msgstr "Relatórios de contabilidade OCA"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_move_lines
 #, python-format
 msgid "Older"
-msgstr "Antigo"
+msgstr "Vanhemmat"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_only_posted_moves
@@ -1623,7 +1620,7 @@ msgstr "Antigo"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_only_posted_moves
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_only_posted_moves
 msgid "Only posted moves"
-msgstr "Apenas movimentos publicados"
+msgstr "Vain kirjatut siirrot"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/open_items_xlsx.py:19
@@ -1634,51 +1631,49 @@ msgstr "Apenas movimentos publicados"
 #: model:ir.ui.menu,name:account_financial_report_qweb.menu_open_items_wizard
 #, python-format
 msgid "Open Items"
-msgstr "Balancete de auditoria de parceiros"
+msgstr "Avoimet tapahtumat"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_open_items_base
-#, fuzzy
 msgid "Open Items -"
-msgstr "Balancete de auditoria de parceiros"
+msgstr "Avoimet tapahtumat -"
 
 #. module: account_financial_report_qweb
 #: model:ir.actions.act_window,name:account_financial_report_qweb.act_action_open_items_wizard_partner_relation
-#, fuzzy
 msgid "Open Items Partner"
-msgstr "Balancete de auditoria de parceiros"
+msgstr "Kumppanin avoimet tapahtumat"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_open_items_report_wizard
 msgid "Open Items Report Wizard"
-msgstr "Assistente de Balancete de Auditoria de Parceiros"
+msgstr "Avoimet tapahtumat -raportin ohjattu toiminto"
 
 #. module: account_financial_report_qweb
 #: model:ir.actions.report.xml,name:account_financial_report_qweb.action_report_open_items_xlsx
 msgid "Open Items XLSX"
-msgstr "Items em Aberto XLSX"
+msgstr "Avoimet tapahtumat XLSX"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_open_items_id
 msgid "Open items id"
-msgstr "Id de items em aberto"
+msgstr "Avoimet tapahtumat id"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.journal_report_wizard_form_view
 msgid "Options"
-msgstr "Opções"
+msgstr "Valinnat"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/open_items_xlsx.py:31
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_open_items_qweb_lines
 #, python-format
 msgid "Original"
-msgstr "Total"
+msgstr "Alkuperäinen"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_parent_id
 msgid "Parent id"
-msgstr "Id do ascendente"
+msgstr "Ylätason id"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:25
@@ -1700,26 +1695,28 @@ msgstr "Id do ascendente"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_lines_header
 #, python-format
 msgid "Partner"
-msgstr "Parceiro"
+msgstr "Kumppani"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_partner_ending_cumul
 msgid ""
 "Partner\n"
 "                    cumul aged balance"
-msgstr "Saldo acumulado de antiguidade de parceiro"
+msgstr ""
+"Kumppani\n"
+"                    kumulatiivinen saldo"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:175
 #, python-format
 msgid "Partner Initial balance"
-msgstr "Saldo Inicial de parceiro"
+msgstr "Kumppanin alkusaldo"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:231
 #, python-format
 msgid "Partner cumul aged balance"
-msgstr "Saldo de antig. acumul. do parceiro"
+msgstr "Kumppanin kumulatiivinen saldo"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:187
@@ -1728,7 +1725,7 @@ msgstr "Saldo de antig. acumul. do parceiro"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_open_items_qweb_ending_cumul
 #, python-format
 msgid "Partner ending balance"
-msgstr "Saldo final do parceiro"
+msgstr "Kumppanin loppusaldo"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_partner_partner_id
@@ -1737,7 +1734,7 @@ msgstr "Saldo final do parceiro"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_partner_partner_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_partner_partner_id
 msgid "Partner id"
-msgstr "Id do Parceiro"
+msgstr "Kumppanin id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_partner_ids
@@ -1745,7 +1742,7 @@ msgstr "Id do Parceiro"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_account_partner_ids
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_partner_ids
 msgid "Partner ids"
-msgstr "Ids do Parceiro"
+msgstr "Kumppanin id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_payable_accounts_only
@@ -1753,37 +1750,37 @@ msgstr "Ids do Parceiro"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_open_items_report_wizard_payable_accounts_only
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_payable_accounts_only
 msgid "Payable accounts only"
-msgstr "Apenas contas a pagar"
+msgstr "Vain maksutilit"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_percent_age_120_days
 msgid "Percent age 120 days"
-msgstr "Percent. antig. 120 dias"
+msgstr "Prosentuaalinen ikä 120 päivää"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_percent_age_30_days
 msgid "Percent age 30 days"
-msgstr "Percent. antig. 30 dias"
+msgstr "Prosentuaalinen ikä 30 päivää"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_percent_age_60_days
 msgid "Percent age 60 days"
-msgstr "Percent. antig. 60 dias"
+msgstr "Prosentuaalinen ikä 60 päivää"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_percent_age_90_days
 msgid "Percent age 90 days"
-msgstr "Percent. antig. 90 dias"
+msgstr "Prosentuaalinen ikä 90 päivää"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_percent_current
 msgid "Percent current"
-msgstr "Percent. corrente"
+msgstr "Tämänhetkinen prosentti"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_percent_older
 msgid "Percent older"
-msgstr "Percent. mais antiga"
+msgstr "Vanhempi prosentti"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:174
@@ -1791,7 +1788,7 @@ msgstr "Percent. mais antiga"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_account_ending_cumul
 #, python-format
 msgid "Percents"
-msgstr "Percentagens"
+msgstr "Prosentit"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/trial_balance_xlsx.py:39
@@ -1801,25 +1798,25 @@ msgstr "Percentagens"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_lines_header
 #, python-format
 msgid "Period balance"
-msgstr "Saldo do período"
+msgstr "Jakson saldo"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.journal_report_wizard_form_view
 msgid "Periods"
-msgstr "Periodos"
+msgstr "Jaksot"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/wizard/journal_report_wizard.py:63
 #, python-format
 msgid "Posted"
-msgstr "Publicado"
+msgstr "Kirjattu"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:40
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_general_ledger_lines
-#, python-format
+#, fuzzy, python-format
 msgid "Rec."
-msgstr "A receber"
+msgstr "Rec."
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_receivable_accounts_only
@@ -1827,7 +1824,7 @@ msgstr "A receber"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_open_items_report_wizard_receivable_accounts_only
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_receivable_accounts_only
 msgid "Receivable accounts only"
-msgstr "Apenas conta a receber"
+msgstr "Vain saatavat tilit"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_move_lines
@@ -1837,8 +1834,8 @@ msgid ""
 "Ref -\n"
 "                        Label"
 msgstr ""
-"Ref -\n"
-"                        Rótulo"
+"Viite -\n"
+"                        Otsikko"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:75
@@ -1848,7 +1845,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal_table_header
 #, python-format
 msgid "Ref - Label"
-msgstr "Ref - Rótulo"
+msgstr "Viite - Otsikko"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_partner_report_account_id
@@ -1857,7 +1854,7 @@ msgstr "Ref - Rótulo"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_partner_report_account_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_partner_report_account_id
 msgid "Report account id"
-msgstr "Id do relatório da conta"
+msgstr "Raportin tilin id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_account_report_id
@@ -1870,41 +1867,41 @@ msgstr "Id do relatório da conta"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_account_report_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_report_id
 msgid "Report id"
-msgstr "Id do relatório"
+msgstr "Raportin id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_tax_line_report_journal_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_line_report_journal_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_report_journal_id
 msgid "Report journal id"
-msgstr "Id do relatório de Diário"
+msgstr "Raportin päiväkirjan id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_journal_ids
 msgid "Report journal ids"
-msgstr "Ids. de relatórios de Diário"
+msgstr "Raportin päiväkirjojen id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_journal_tax_line_ids
 msgid "Report journal tax line ids"
-msgstr "Ids linhas do relatório do diário de imposto"
+msgstr "Raportin päiväkirjan verorivien id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_line_report_move_id
 msgid "Report move id"
-msgstr "ID de relatório de movimento"
+msgstr "Raportin siirron id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_report_move_ids
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_move_ids
 msgid "Report move ids"
-msgstr "Ids. de relatórios de movimento"
+msgstr "Raportin siirtojen id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_report_move_line_ids
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_move_line_ids
 msgid "Report move line ids"
-msgstr "Ids. das linhas de movimento do relatório"
+msgstr "Raportin siirtorivien id:t"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_line_report_partner_id
@@ -1912,13 +1909,13 @@ msgstr "Ids. das linhas de movimento do relatório"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_move_line_report_partner_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_open_items_qweb_move_line_report_partner_id
 msgid "Report partner id"
-msgstr "Id do relatório do parceiro"
+msgstr "Raportin kumppanin id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_report_tax_line_ids
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_tax_line_ids
 msgid "Report tax line ids"
-msgstr "Ids das linhas de imposto do relatório"
+msgstr "Raportin verorivien id:t"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:26
@@ -1929,12 +1926,12 @@ msgstr "Ids das linhas de imposto do relatório"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_open_items_qweb_lines
 #, python-format
 msgid "Residual"
-msgstr "Valor em dívida"
+msgstr "Jäännös"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_account_sequence
 msgid "Sequence"
-msgstr "Sequência"
+msgstr "Järjestys"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:96
@@ -1945,7 +1942,7 @@ msgstr "Sequência"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_filters
 #, python-format
 msgid "Show"
-msgstr "Mostrar"
+msgstr "Näytä"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:103
@@ -1954,12 +1951,12 @@ msgstr "Mostrar"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_general_ledger_filters
 #, python-format
 msgid "Show analytic tags"
-msgstr "Mostrar etiquetas analíticas"
+msgstr "Näytä analyyttiset tunnisteet"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_show_cost_center
 msgid "Show cost center"
-msgstr "Mostrar centro de custo"
+msgstr "Näytä kustannuspaikka"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:107
@@ -1970,34 +1967,34 @@ msgstr "Mostrar centro de custo"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_foreign_currency
 #, python-format
 msgid "Show foreign currency"
-msgstr "Mostrar moeda estrangeira"
+msgstr "Näytä vieras valuutta"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_show_move_line_details
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_aged_partner_balance_qweb_show_move_line_details
 msgid "Show move line details"
-msgstr "Mostrar detalhe das linhas de movimento"
+msgstr "Näytä siirtorivien tiedot"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_trial_balance_qweb_show_partner_details
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_show_partner_details
 msgid "Show partner details"
-msgstr "Mostrar detalhes do parceiro"
+msgstr "Näytä kumppanin tiedot"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_journal_report_wizard_sort_option
 msgid "Sort entries by"
-msgstr "Ordenar entradas por"
+msgstr "Järjestä viennit"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_sort_option
 msgid "Sort option"
-msgstr "Opção de ordenação"
+msgstr "Järjestyksen valinnat"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_journal_report_wizard_date_from
 msgid "Start date"
-msgstr "Data inicial"
+msgstr "Alkupäivä"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:37
@@ -2005,7 +2002,7 @@ msgstr "Data inicial"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_general_ledger_lines
 #, python-format
 msgid "Tags"
-msgstr "Etiquetas"
+msgstr "Tunnisteet"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_aged_partner_balance_wizard_target_move
@@ -2013,7 +2010,7 @@ msgstr "Etiquetas"
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_open_items_report_wizard_target_move
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_trial_balance_report_wizard_target_move
 msgid "Target Moves"
-msgstr "Movimentos Alvo"
+msgstr "Kohdesiirrot"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:130
@@ -2027,68 +2024,68 @@ msgstr "Movimentos Alvo"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_filters
 #, python-format
 msgid "Target moves filter"
-msgstr "Filtro de movimentos alvo"
+msgstr "Kohdesiirtojen suodin"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_all_taxes
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal_taxes
 msgid "Tax Amount"
-msgstr "Valor do Imposto"
+msgstr "Veron määrä"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:143
 #, python-format
 msgid "Tax Balance"
-msgstr "Saldo de impostos"
+msgstr "Verosaldo"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:137
 #, python-format
 msgid "Tax Credit"
-msgstr "Crédito de imposto"
+msgstr "Verojen kredit"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/journal_report_xlsx.py:131
 #, python-format
 msgid "Tax Debit"
-msgstr "Débito de imposto"
+msgstr "Verojen debet"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_tax_line_tax_balance
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_tax_line_tax_balance
 msgid "Tax balance"
-msgstr "Saldo de impostos"
+msgstr "Verosaldo"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_tax_line_tax_code
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_tax_line_tax_code
 msgid "Tax code"
-msgstr "Código do imposto"
+msgstr "Verokoodi"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_tax_line_tax_credit
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_tax_line_tax_credit
 msgid "Tax credit"
-msgstr "Crédito de imposto"
+msgstr "Verojen kredit"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_tax_line_tax_debit
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_tax_line_tax_debit
 msgid "Tax debit"
-msgstr "Débito de imposto"
+msgstr "Verojen debet"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_tax_line_tax_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_line_tax_id
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_tax_line_tax_id
 msgid "Tax id"
-msgstr "Id do imposto"
+msgstr "Vero id"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_journal_tax_line_tax_name
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_report_tax_line_tax_name
 msgid "Tax name"
-msgstr "Nome do imposto"
+msgstr "Veronimi"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:29
@@ -2097,13 +2094,13 @@ msgstr "Nome do imposto"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal_table_header
 #, python-format
 msgid "Taxes"
-msgstr "Impostos"
+msgstr "Verot"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_move_line_taxes_description
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_move_line_taxes_description
 msgid "Taxes description"
-msgstr "Descrição dos impostos"
+msgstr "Verojen kuvaus"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/wizard/general_ledger_wizard.py:197
@@ -2112,6 +2109,8 @@ msgid ""
 "The Company in the General Ledger Report Wizard and in Date Range must be "
 "the same."
 msgstr ""
+"Valitun yrityksen täytyy olla sama ohjatussa pääkirjan raporttitoiminnossa "
+"ja valitulla ajanjaksolla."
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/wizard/trial_balance_wizard.py:166
@@ -2120,18 +2119,20 @@ msgid ""
 "The Company in the Trial Balance Report Wizard and in Date Range must be the "
 "same."
 msgstr ""
+"Valitun yrityksen täytyy olla sama ohjatussa koetaseen raporttitoiminnossa "
+"ja valitulla ajanjaksolla."
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/wizard/trial_balance_wizard.py:94
 #, python-format
 msgid "The hierarchy level to filter on must be greater than 0."
-msgstr "O nível hierárquico a filtrar tem que ser superior a 0."
+msgstr "Suodatettavan hierarkiatason täytyy olla suurempi kuin 0."
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_general_ledger_filters
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_qweb_filters
 msgid "To:"
-msgstr "Para:"
+msgstr "Päättyen:"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/aged_partner_balance_xlsx.py:167
@@ -2139,7 +2140,7 @@ msgstr "Para:"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_aged_partner_balance_account_ending_cumul
 #, python-format
 msgid "Total"
-msgstr "Total"
+msgstr "Yhteensä"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/trial_balance_xlsx.py:19
@@ -2150,23 +2151,22 @@ msgstr "Total"
 #: model:ir.ui.menu,name:account_financial_report_qweb.menu_trial_balance_wizard
 #, python-format
 msgid "Trial Balance"
-msgstr "Balancete de verificação"
+msgstr "Koetase"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_trial_balance_base
-#, fuzzy
 msgid "Trial Balance -"
-msgstr "Balancete de verificação"
+msgstr "Koetase -"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_trial_balance_report_wizard
 msgid "Trial Balance Report Wizard"
-msgstr "Ajuda do relatório Balancete de verificação"
+msgstr "Koetaseraportin ohjattu toiminto"
 
 #. module: account_financial_report_qweb
 #: model:ir.actions.report.xml,name:account_financial_report_qweb.action_report_trial_balance_xlsx
 msgid "Trial Balance XLSX"
-msgstr "Balancete de verificação XLSX"
+msgstr "Koetase XLSX"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.trial_balance_wizard
@@ -2174,13 +2174,13 @@ msgid ""
 "Trial Balance can be computed only if selected company have only one "
 "unaffected earnings account."
 msgstr ""
-"O Balancete de verificação apenas pode ser calculado se a empresa "
-"seleccionada só tiver uma conta de lucros não distribuídos."
+"Koetase voidaan laskea vain jos valitulla yrityksellä on tasan yksi tili "
+"kuluvan vuoden tulokselle."
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_general_ledger_qweb_unaffected_earnings_account
 msgid "Unaffected earnings account"
-msgstr "Conta de lucros não distribuídos"
+msgstr "Kuluvan vuoden tulojen tili"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,help:account_financial_report_qweb.field_general_ledger_report_wizard_hide_account_at_0
@@ -2190,14 +2190,14 @@ msgid ""
 "If partners are filtered, debits and credits totals will not match the trial "
 "balance."
 msgstr ""
-"Use este filtro para ocultar uma conta ou um parceiro com saldo final igual "
-"a 0. Selecionados os parceiros, o total dos débitos e créditos do balancete "
-"de verificação não coincidem."
+"Käytä tätä suodinta piilottaaksesi tilin tai kumppanin jonka loppusaldo on "
+"0. Jos kumppaneita on suodatettu, debetin ja kreditin loppusummat eivät "
+"täsmää koetaseen kanssa."
 
 #. module: account_financial_report_qweb
 #: model:ir.actions.client,name:account_financial_report_qweb.action_report_vat_report
 msgid "VAT Report"
-msgstr "Relatório do IVA"
+msgstr "Veroraportti"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.aged_partner_balance_wizard
@@ -2206,7 +2206,7 @@ msgstr "Relatório do IVA"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.open_items_wizard
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.trial_balance_wizard
 msgid "View"
-msgstr "Ver"
+msgstr "Näkymä"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,help:account_financial_report_qweb.field_trial_balance_report_wizard_hide_account_at_0
@@ -2214,14 +2214,14 @@ msgid ""
 "When this option is enabled, the trial balance will not display accounts "
 "that have initial balance = debit = credit = end balance = 0"
 msgstr ""
-"Quando esta opção é ativada, o balancete não mostrará contas cujo saldo "
-"inicial = débito = crédito = saldo final = 0"
+"Kun tämä on valittuna, koetase ei näytä tilejä joiden alkusaldo = debet = "
+"kredit = loppusaldo = 0"
 
 #. module: account_financial_report_qweb
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_journal_report_wizard_with_account_name
 #: model:ir.model.fields,field_description:account_financial_report_qweb.field_report_journal_qweb_with_account_name
 msgid "With account name"
-msgstr "Com nome de conta"
+msgstr "Tilin nimen kanssa"
 
 #. module: account_financial_report_qweb
 #: code:addons/account_financial_report_qweb/report/general_ledger_xlsx.py:100
@@ -2232,12 +2232,12 @@ msgstr "Com nome de conta"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_general_ledger_filters
 #, python-format
 msgid "Yes"
-msgstr "Sim"
+msgstr "Kyllä"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_journal_report_wizard
 msgid "journal.report.wizard"
-msgstr "assistente de relatório de diário"
+msgstr "journal.report.wizard"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.aged_partner_balance_wizard
@@ -2246,170 +2246,144 @@ msgstr "assistente de relatório de diário"
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.open_items_wizard
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.trial_balance_wizard
 msgid "or"
-msgstr "ou"
+msgstr "tai"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_aged_partner_balance_qweb
 msgid "report_aged_partner_balance_qweb"
-msgstr ""
+msgstr "report_aged_partner_balance_qweb"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_aged_partner_balance_qweb_account
 msgid "report_aged_partner_balance_qweb_account"
-msgstr ""
+msgstr "report_aged_partner_balance_qweb_account"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_aged_partner_balance_qweb_line
 msgid "report_aged_partner_balance_qweb_line"
-msgstr ""
+msgstr "report_aged_partner_balance_qweb_line"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_aged_partner_balance_qweb_move_line
 msgid "report_aged_partner_balance_qweb_move_line"
-msgstr ""
+msgstr "report_aged_partner_balance_qweb_move_line"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_aged_partner_balance_qweb_partner
 msgid "report_aged_partner_balance_qweb_partner"
-msgstr ""
+msgstr "report_aged_partner_balance_qweb_partner"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_general_ledger_qweb
 msgid "report_general_ledger_qweb"
-msgstr ""
+msgstr "report_general_ledger_qweb"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_general_ledger_qweb_account
 msgid "report_general_ledger_qweb_account"
-msgstr ""
+msgstr "report_general_ledger_qweb_account"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_general_ledger_qweb_move_line
 msgid "report_general_ledger_qweb_move_line"
-msgstr ""
+msgstr "report_general_ledger_qweb_move_line"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_general_ledger_qweb_partner
 msgid "report_general_ledger_qweb_partner"
-msgstr ""
+msgstr "report_general_ledger_qweb_partner"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_journal_qweb
 msgid "report_journal_qweb"
-msgstr ""
+msgstr "report_journal_qweb"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_journal_qweb_journal
 msgid "report_journal_qweb_journal"
-msgstr ""
+msgstr "report_journal_qweb_journal"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_journal_qweb_journal_tax_line
 msgid "report_journal_qweb_journal_tax_line"
-msgstr ""
+msgstr "report_journal_qweb_journal_tax_line"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_journal_qweb_move
 msgid "report_journal_qweb_move"
-msgstr ""
+msgstr "report_journal_qweb_move"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_journal_qweb_move_line
 msgid "report_journal_qweb_move_line"
-msgstr ""
+msgstr "report_journal_qweb_move_line"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_journal_qweb_report_tax_line
 msgid "report_journal_qweb_report_tax_line"
-msgstr ""
+msgstr "report_journal_qweb_report_tax_line"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_open_items_qweb
 msgid "report_open_items_qweb"
-msgstr ""
+msgstr "report_open_items_qweb"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_open_items_qweb_account
 msgid "report_open_items_qweb_account"
-msgstr ""
+msgstr "report_open_items_qweb_account"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_open_items_qweb_move_line
 msgid "report_open_items_qweb_move_line"
-msgstr ""
+msgstr "report_open_items_qweb_move_line"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_open_items_qweb_partner
 msgid "report_open_items_qweb_partner"
-msgstr ""
+msgstr "report_open_items_qweb_partner"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_qweb_abstract
 msgid "report_qweb_abstract"
-msgstr ""
+msgstr "report_qweb_abstract"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_trial_balance_qweb
 msgid "report_trial_balance_qweb"
-msgstr ""
+msgstr "report_trial_balance_qweb"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_trial_balance_qweb_account
 msgid "report_trial_balance_qweb_account"
-msgstr ""
+msgstr "report_trial_balance_qweb_account"
 
 #. module: account_financial_report_qweb
 #: model:ir.model,name:account_financial_report_qweb.model_report_trial_balance_qweb_partner
 msgid "report_trial_balance_qweb_partner"
-msgstr ""
+msgstr "report_trial_balance_qweb_partner"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal
 msgid "to"
-msgstr "para"
+msgstr "-"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal_table_header
 msgid "width: 215px;"
-msgstr "largura: 215px;"
+msgstr "width: 215px;"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal_table_header
 msgid "width: 220px;"
-msgstr "largura: 220px;"
+msgstr "width: 220px;"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal_table_header
 msgid "width: 360px;"
-msgstr "largura: 360px;"
+msgstr "width: 360px;"
 
 #. module: account_financial_report_qweb
 #: model:ir.ui.view,arch_db:account_financial_report_qweb.report_journal_qweb_journal_table_header
 msgid "width: 75px;"
-msgstr "largura: 75px;"
-
-#~ msgid "Matching number"
-#~ msgstr "Número do matching"
-
-#, fuzzy
-#~ msgid "Aged Partner Balance - %s - %s"
-#~ msgstr "Antiguidade de Saldo de Parceiros"
-
-#, fuzzy
-#~ msgid "General Ledger - %s - %s"
-#~ msgstr "Extrato geral das contas"
-
-#, fuzzy
-#~ msgid "Journal Ledger - %s - %s"
-#~ msgstr "Extrato de diário"
-
-#, fuzzy
-#~ msgid "Open Items - %s - %s"
-#~ msgstr "Balancete de auditoria de parceiros"
-
-#, fuzzy
-#~ msgid "Trial Balance - %s - %s"
-#~ msgstr "Balancete de verificação"
-
-#~ msgid "Has second currency"
-#~ msgstr "Tem uma segunda moeda"
+msgstr "width: 75px;"

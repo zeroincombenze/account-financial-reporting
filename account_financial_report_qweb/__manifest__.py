@@ -6,11 +6,11 @@
 {
     'name': 'QWeb Financial Reports',
     'summary': 'OCA Financial Reports',
-    'version': '10.0.3.0.1',
+    'version': '10.0.3.1.1',
     'category': 'Reporting',
     'author': 'Odoo Community Association (OCA)',
     'website': 'https://odoo-community.org/',
-    'license': 'LGPL-3',
+    "license": "AGPL-3",
     'depends': [
         'account',
         'account_group',

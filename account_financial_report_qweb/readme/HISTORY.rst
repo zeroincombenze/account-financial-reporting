@@ -1,3 +1,8 @@
+10.0.3.1.1 (2022-11-24)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+* In the Trial Balance you have an option to hide parent hierarchy levels
+
 10.0.3.0.1 (2019-05-05)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
