@@ -67,7 +67,7 @@ class TrialBalanceReportAccount(models.TransientModel):
 
     _name = 'report_trial_balance_qweb_account'
     _inherit = 'report_qweb_abstract'
-    _order = 'sequence, code ASC, name'
+    _order = 'code ASC, name'
 
     report_id = fields.Many2one(
         comodel_name='report_trial_balance_qweb',
@@ -571,8 +571,7 @@ WHERE newline.account_group_id = report_trial_balance_qweb_account.parent_id
             lambda a: a.account_group_id is not False)
         for group in groups:
             if self.hierarchy_on == 'compute':
-                group.compute_account_ids = \
-                    group.account_group_id.compute_account_ids
+                group.compute_account_ids = group.account_group_id.compute_account_ids
             else:
                 if group.child_account_ids:
                     chacc = group.child_account_ids.replace(

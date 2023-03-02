@@ -1,3 +1,8 @@
+10.0.3.1.3 (2023-03-01)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+* Trial balance line report order / Ordine di stampa righe bilancio
+
 10.0.3.1.1 (2022-11-24)
 ~~~~~~~~~~~~~~~~~~~~~~~
 

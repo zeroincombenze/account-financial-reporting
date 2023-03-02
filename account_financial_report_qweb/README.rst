@@ -1,6 +1,6 @@
 
 ========================================
-|icon| QWeb Financial Reports 10.0.3.0.1
+|icon| QWeb Financial Reports 10.0.3.1.3
 ========================================
 
 
@@ -8,9 +8,11 @@
 
 .. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/account-financial-reporting/10.0/account_financial_report_qweb/static/description/icon.png
 
-|Maturity| |Build Status| |Coverage Status| |Codecov Status| |license gpl| |Tech Doc| |Help| |Try Me|
+|Maturity| |Build Status| |Codecov Status| |license gpl| |Try Me|
+
 
 .. contents::
+
 
 
 Overview / Panoramica
@@ -60,11 +62,12 @@ OCA comparation / Confronto con OCA
 -----------------------------------
 
 
-+-----------------------------------------------------------------+-------------------+-----------------------+--------------------------------+
-| Description / Descrizione                                       | Zeroincombenze    | OCA                   | Notes / Note                   |
-+-----------------------------------------------------------------+-------------------+-----------------------+--------------------------------+
-| Coverage / Copertura test                                       |  |Codecov Status| | |OCA Codecov Status|  | |OCA project|                  |
-+-----------------------------------------------------------------+-------------------+-----------------------+--------------------------------+
++-----------------------------------------------------------------+-------------------+----------------+--------------------------------+
+| Description / Descrizione                                       | Zeroincombenze    | OCA            | Notes / Note                   |
++-----------------------------------------------------------------+-------------------+----------------+--------------------------------+
+| Coverage / Copertura test                                       |  |Codecov Status| | |OCA Codecov|  |                                |
++-----------------------------------------------------------------+-------------------+----------------+--------------------------------+
+
 
 |
 |
@@ -75,46 +78,45 @@ Getting started / Come iniziare
 |Try Me|
 
 
-Prerequisites / Prerequisiti
-----------------------------
-
-
-* python2.7+
-* postgresql 9.2+
-
 |
 
 Installation / Installazione
 ----------------------------
 
+
 +---------------------------------+------------------------------------------+
 | |en|                            | |it|                                     |
 +---------------------------------+------------------------------------------+
-| These instruction are just an   | Istruzioni di esempio valide solo per    |
-| example to remember what        | distribuzioni Linux CentOS 7, Ubuntu 14+ |
-| you have to do on Linux.        | e Debian 8+                              |
+| These instructions are just an  | Istruzioni di esempio valide solo per    |
+| example; use on Linux CentOS 7+ | distribuzioni Linux CentOS 7+,           |
+| Ubuntu 14+ and Debian 8+        | Ubuntu 14+ e Debian 8+                   |
 |                                 |                                          |
 | Installation is built with:     | L'installazione è costruita con:         |
 +---------------------------------+------------------------------------------+
-| `Zeroincombenze Tools <https://github.com/zeroincombenze/tools>`__         |
+| `Zeroincombenze Tools <https://zeroincombenze-tools.readthedocs.io/>`__    |
 +---------------------------------+------------------------------------------+
 | Suggested deployment is:        | Posizione suggerita per l'installazione: |
 +---------------------------------+------------------------------------------+
-| /opt/odoo/10.0/account-financial-reporting/                                |
+| $HOME/10.0                                                                 |
 +----------------------------------------------------------------------------+
 
 ::
 
     cd $HOME
+    # *** Tools installation & activation ***
+    # Case 1: you have not installed zeroincombenze tools
     git clone https://github.com/zeroincombenze/tools.git
-    cd ./tools
+    cd $HOME/tools
     ./install_tools.sh -p
-    export PATH=$HOME/dev:$PATH
-    odoo_install_repository account-financial-reporting -b 10.0 -O zero
-    for pkg in os0 z0lib; do
-        pip install $pkg -U
-    done
-    sudo manage_odoo requirements -b 10.0 -vsy -o /opt/odoo/10.0
+    source $HOME/devel/activate_tools
+    # Case 2: you have already installed zeroincombenze tools
+    cd $HOME/tools
+    ./install_tools.sh -U
+    source $HOME/devel/activate_tools
+    # *** End of tools installation or upgrade ***
+    # Odoo repository installation; OCB repository must be installed
+    odoo_install_repository account-financial-reporting -b 10.0 -O zero -o $HOME/10.0
+    vem create $HOME/10.0/venv_odoo -O 10.0 -a "*" -DI -o $HOME/10.0
 
 From UI: go to:
 
@@ -122,22 +124,30 @@ From UI: go to:
 * |menu| Apps > Update Apps List
 * |menu| Setting > Apps |right_do| Select **account_financial_report_qweb** > Install
 
+
 |
 
 Upgrade / Aggiornamento
 -----------------------
 
-+---------------------------------+------------------------------------------+
-| |en|                            | |it|                                     |
-+---------------------------------+------------------------------------------+
-| When you want upgrade and you   | Per aggiornare, se avete installato con  |
-| installed using above           | le istruzioni di cui sopra:              |
-| statements:                     |                                          |
-+---------------------------------+------------------------------------------+
 
 ::
 
-    odoo_install_repository account-financial-reporting -b 10.0 -O zero -U
+    cd $HOME
+    # *** Tools installation & activation ***
+    # Case 1: you have not installed zeroincombenze tools
+    git clone https://github.com/zeroincombenze/tools.git
+    cd $HOME/tools
+    ./install_tools.sh -p
+    source $HOME/devel/activate_tools
+    # Case 2: you have already installed zeroincombenze tools
+    cd $HOME/tools
+    ./install_tools.sh -U
+    source $HOME/devel/activate_tools
+    # *** End of tools installation or upgrade ***
+    # Odoo repository upgrade
+    odoo_install_repository account-financial-reporting -b 10.0 -o $HOME/10.0 -U
+    vem amend $HOME/10.0/venv_odoo -o $HOME/10.0
     # Adjust following statements as per your system
     sudo systemctl restart odoo
 
@@ -177,33 +187,20 @@ An Enhancement Proposal may be submitted if your idea gains ground.
 
 |it| Se hai proposte per migliorare questo modulo, puoi inviare una mail a <cc@shs-av.com> per un iniziale contatto.
 
+
 ChangeLog History / Cronologia modifiche
 ----------------------------------------
 
-10.0.3.0.1 (2019-05-05)
+10.0.3.1.3 (2023-03-01)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-* Selection overdue_only in Open Items report
+* Trial balance line report order / Ordine di stampa righe bilancio
 
-
-10.0.3.0.0 (2019-01-09)
+10.0.3.1.1 (2022-11-24)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-* Improve multicompany related usability.
-* Improve performance in the General Ledger.
-* The reports now display an improved title that includes report name,
-  company and currency.
+* In the Trial Balance you have an option to hide parent hierarchy levels
 
-
-10.0.2.0.0 (2018-11-29)
-~~~~~~~~~~~~~~~~~~~~~~~
-
-* The Trial Balance now allows to display the hierarchy of accounts
-* In the Trial Balance you can apply a filter by hierarchy levels
-* The Trial Balance shows the unaffected earnings account computed as:
-  initial balance: sum of past unaffected earnings + P&L result; debit, credit
-  and period balance: totals only for the unaffected earnings account.
-* In the Journal Ledger the field 'Journal' is now optional
 
 
 |
@@ -230,6 +227,9 @@ Authors / Autori
 * `redCOR AG <http://www.redcor.ch>`__
 * `ACSONE SA/NV <http://acsone.eu>`__
 * `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
+Authors
+-------
+
 
 Contributors / Collaboratori
 ----------------------------
@@ -253,29 +253,18 @@ Contributors / Collaboratori
 * Benjamin Willig <benjamin.willig@acsone.eu>
 * Miquel Raïch <miquel.raich@eficent.com>
 * Antonio M. Vigliotti <info@shs-av.com>
+Contributors
+------------
 
 Much of the work in this module was done at a sprint in Sorrento, Italy in
 April 2016.
 
 
-Acknowledges / Riconoscimenti
------------------------------
+Maintainer / Manutenzione
+-------------------------
 
-+-----------------------------------+-------------------------------------------+
-| |en|                              | |it|                                      |
-+-----------------------------------+-------------------------------------------+
-| This software inherits from past  | Questo software eredita da versioni       |
-| versions some parts of code. Even | passate alcune parti di codice. Anche     |
-| if people did not actively        | se non hanno partecipato attivamente allo |
-| participate to development, we    | allo sviluppo, noi siamo grati a tutte le |
-| acknowledge them for their prior  | persone che precedentemente vi hanno      |
-| contributions.                    | contribuito.                              |
-+-----------------------------------+-------------------------------------------+
 
-Much of the work in this module was done at a sprint in Sorrento, Italy in
-April 2016.
-Much of the work in this module was done at a sprint in Sorrento, Italy in
-April 2016.
+
 
 |
 
@@ -292,6 +281,7 @@ che distribuisce e promuove **Odoo** pronto all'uso sulla propria infrastuttura.
 La distribuzione `Zeroincombenze® <https://wiki.zeroincombenze.org/en/Odoo>`__ è progettata per le esigenze del mercato italiano.
 
 
+
 |chat_with_us|
 
 
@@ -299,29 +289,26 @@ La distribuzione `Zeroincombenze® <https://wiki.zeroincombenze.org/en/Odoo>`__ 
 
 This module is part of account-financial-reporting project.
 
-Last Update / Ultimo aggiornamento: 2019-05-03
+Last Update / Ultimo aggiornamento: 2023-03-02
 
-.. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-red.png
+.. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-black.png
     :target: https://odoo-community.org/page/development-status
-    :alt: Alfa
+    :alt: 
 .. |Build Status| image:: https://travis-ci.org/zeroincombenze/account-financial-reporting.svg?branch=10.0
-    :target: https://travis-ci.org/zeroincombenze/account-financial-reporting
+    :target: https://travis-ci.com/zeroincombenze/account-financial-reporting
     :alt: github.com
 .. |license gpl| image:: https://img.shields.io/badge/licence-LGPL--3-7379c3.svg
     :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
     :alt: License: LGPL-3
 .. |license opl| image:: https://img.shields.io/badge/licence-OPL-7379c3.svg
-    :target: https://www.odoo.com/documentation/user/9.0/legal/licenses/licenses.html
+    :target: https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html
     :alt: License: OPL
 .. |Coverage Status| image:: https://coveralls.io/repos/github/zeroincombenze/account-financial-reporting/badge.svg?branch=10.0
     :target: https://coveralls.io/github/zeroincombenze/account-financial-reporting?branch=10.0
     :alt: Coverage
 .. |Codecov Status| image:: https://codecov.io/gh/zeroincombenze/account-financial-reporting/branch/10.0/graph/badge.svg
-    :target: https://codecov.io/gh/OCA/account-financial-reporting/branch/10.0
+    :target: https://codecov.io/gh/zeroincombenze/account-financial-reporting/branch/10.0
     :alt: Codecov
-.. |OCA project| image:: https://raw.githubusercontent.com/zeroincombenze/account-financial-reporting/10.0/account_financial_report_qweb/static/description/Unknown badge-OCA
-    :target: https://github.com/OCA/account-financial-reporting/tree/10.0
-    :alt: OCA
 .. |Tech Doc| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-10.svg
     :target: https://wiki.zeroincombenze.org/en/Odoo/10.0/dev
     :alt: Technical Documentation
@@ -331,7 +318,7 @@ Last Update / Ultimo aggiornamento: 2019-05-03
 .. |Try Me| image:: https://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg
     :target: https://erp10.zeroincombenze.it
     :alt: Try Me
-.. |OCA Codecov Status| image:: https://codecov.io/gh/OCA/account-financial-reporting/branch/10.0/graph/badge.svg
+.. |OCA Codecov| image:: https://codecov.io/gh/OCA/account-financial-reporting/branch/10.0/graph/badge.svg
     :target: https://codecov.io/gh/OCA/account-financial-reporting/branch/10.0
     :alt: Codecov
 .. |Odoo Italia Associazione| image:: https://www.odoo-italia.org/images/Immagini/Odoo%20Italia%20-%20126x56.png
@@ -341,9 +328,9 @@ Last Update / Ultimo aggiornamento: 2019-05-03
    :target: https://www.zeroincombenze.it/
    :alt: Zeroincombenze
 .. |en| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/flags/en_US.png
-   :target: https://www.facebook.com/groups/openerp.italia/
+   :target: https://www.facebook.com/Zeroincombenze-Software-gestionale-online-249494305219415/
 .. |it| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/flags/it_IT.png
-   :target: https://www.facebook.com/groups/openerp.italia/
+   :target: https://www.facebook.com/Zeroincombenze-Software-gestionale-online-249494305219415/
 .. |check| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/check.png
 .. |no_check| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/no_check.png
 .. |menu| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/awesome/menu.png
@@ -361,4 +348,5 @@ Last Update / Ultimo aggiornamento: 2019-05-03
 .. |FatturaPA| image:: https://raw.githubusercontent.com/zeroincombenze/grymb/master/certificates/ade/icons/fatturapa.png
    :target: https://github.com/zeroincombenze/grymb/blob/master/certificates/ade/scope/fatturapa.md
 .. |chat_with_us| image:: https://www.shs-av.com/wp-content/chat_with_us.gif
-   :target: https://tawk.to/85d4f6e06e68dd4e358797643fe5ee67540e408b
+   :target: https://t.me/Assitenza_clienti_powERP
+

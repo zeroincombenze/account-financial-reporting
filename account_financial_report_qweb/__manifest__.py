@@ -6,14 +6,14 @@
 {
     'name': 'QWeb Financial Reports',
     'summary': 'OCA Financial Reports',
-    'version': '10.0.3.1.1',
+    'version': '10.0.3.1.3',
     'category': 'Reporting',
     'author': 'Odoo Community Association (OCA)',
     'website': 'https://odoo-community.org/',
     "license": "AGPL-3",
     'depends': [
         'account',
-        'account_group',
+        'account_group',    # account-financial-tools
         'date_range',
         'report_xlsx',
         'report',
@@ -44,4 +44,5 @@
     'installable': True,
     'application': True,
     'auto_install': False,
+    'license': 'AGPL-3',
 }
