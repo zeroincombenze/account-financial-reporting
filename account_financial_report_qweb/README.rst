@@ -194,12 +194,12 @@ ChangeLog History / Cronologia modifiche
 10.0.3.1.3 (2023-03-01)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-* Trial balance line report order / Ordine di stampa righe bilancio
+* [FIX] Trial balance line report order / Ordine di stampa righe bilancio
 
 10.0.3.1.1 (2022-11-24)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-* In the Trial Balance you have an option to hide parent hierarchy levels
+* [IMP] In the Trial Balance you have an option to hide parent hierarchy levels
 
 
 
