@@ -39,6 +39,7 @@ coverage.xml
 
 # Pycharm
 .idea
+.vscode
 
 # Mr Developer
 .mr.developer.cfg
@@ -54,7 +55,3 @@ docs/_build/
 # Backup files
 *~
 *.swp
-stdout.log
-*.oca
-*.z0i
-.gitrepname

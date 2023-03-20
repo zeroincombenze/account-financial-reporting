@@ -1,66 +1,50 @@
-# -*- encoding: utf-8 -*-
-###########################################################################
-#    Copyright (C) OpenERP Venezuela (<http://openerp.com.ve>).
-#    All Rights Reserved
-# Credits######################################################
-#    Coded by:   Humberto Arocha humberto@openerp.com.ve
-#                Angelica Barrios angelicaisabelb@gmail.com
-#               Jordi Esteve <jesteve@zikzakmedia.com>
-#    Planified by: Humberto Arocha
-#    Finance by: LUBCAN COL S.A.S http://www.lubcancol.com
-#    Audited by: Humberto Arocha humberto@openerp.com.ve
-#############################################################################
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-##############################################################################
+# Author: Damien Crier
+# Author: Julien Coux
+# Copyright 2016 Camptocamp SA
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
-    "name": "Common financial reports",
-    "version": "2.0",
-    "author": "Vauxoo,Odoo Community Association (OCA)",
-    "website": "http://www.vauxoo.com",
-    "license": "GPL-3 or any later version",
-    "depends": ["base",
-                "account"
-                ],
-    "category": "Accounting",
-    "description": """
-Multipurpose Accounting report generator.
-=========================================
-
-From the wizard you will be asked to provide information needed to create your
-report.
-
-Not only you can set the option within the wizard you can create your own
-Customized Account Financial Reports, in here, you will be able to create
-Templates for generating Two types of Reports: Balance Sheets and Income
-Statements, incluiding Analytic Ledgers. Besides, you can select within a set
-of choices to get better detailed report, be it that you ask it by one or
-several periods, by months (12 Months + YTD), or by quarters (4QRT's + YTD).
-Even you can get your reports in currencies other than the one set on your
-company.
-
-In the [ Account's Sign on Reports ] Section in the Company will be able to
-set the sign conventions for the Accounts, so that you will be able to see in
-positives Values in your reports for those accounts with Accreditable nature
-where appropriate""",
-    "data": [
-        "security/security.xml",
-        "security/ir.model.access.csv",
-        "view/report.xml",
-        "view/wizard.xml",
-        "view/company_view.xml",
-        "view/account_financial_report_view.xml",
+    'name': 'Account Financial Reports',
+    'version': '12.0.1.5.2',
+    'category': 'Reporting',
+    'summary': 'OCA Financial Reports',
+    'author': 'Camptocamp SA,'
+              'initOS GmbH,'
+              'redCOR AG,'
+              'Eficent,'
+              'Odoo Community Association (OCA)',
+    "website": "https://odoo-community.org/",
+    'depends': [
+        'account',
+        'date_range',
+        'report_xlsx',
     ],
-    "active": False,
-    'installable': False
+    'data': [
+        'wizard/aged_partner_balance_wizard_view.xml',
+        'wizard/general_ledger_wizard_view.xml',
+        'wizard/journal_ledger_wizard_view.xml',
+        'wizard/open_items_wizard_view.xml',
+        'wizard/trial_balance_wizard_view.xml',
+        'wizard/vat_report_wizard_view.xml',
+        'menuitems.xml',
+        'reports.xml',
+        'report/templates/layouts.xml',
+        'report/templates/aged_partner_balance.xml',
+        'report/templates/general_ledger.xml',
+        'report/templates/journal_ledger.xml',
+        'report/templates/open_items.xml',
+        'report/templates/trial_balance.xml',
+        'report/templates/vat_report.xml',
+        'view/account_view.xml',
+        'view/report_template.xml',
+        'view/report_general_ledger.xml',
+        'view/report_journal_ledger.xml',
+        'view/report_trial_balance.xml',
+        'view/report_open_items.xml',
+        'view/report_aged_partner_balance.xml',
+        'view/report_vat_report.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+    'license': 'AGPL-3',
 }
