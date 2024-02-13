@@ -1,1 +1,0 @@
-* Odoo Community Association (OCA) <https://odoo-community.org>
